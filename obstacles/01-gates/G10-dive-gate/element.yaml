@@ -1,0 +1,25 @@
+# G10 — Горизонтальное кольцо (dive gate)
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G10
+name_ru: "Горизонтальное кольцо (dive gate)"
+name_en: "Dive gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G10-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G10-a.svg

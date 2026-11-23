@@ -1,0 +1,30 @@
+# G06 — Многоугольные ворота
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G06
+name_ru: "Многоугольные ворота"
+name_en: "Polygon gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G06-a
+    label: "шестиугольник"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G06-a.svg
+  - id: G06-b
+    label: "восьмиугольник"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G06-b.svg

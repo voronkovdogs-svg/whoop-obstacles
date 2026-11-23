@@ -1,0 +1,35 @@
+# G03 — Квадратные ворота
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G03
+name_ru: "Квадратные ворота"
+name_en: "Square gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G03-a
+    label: "300×300"
+    dimensions_mm: { width: 300, height: 300 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G03-a.svg
+  - id: G03-b
+    label: "400×400"
+    dimensions_mm: { width: 400, height: 400 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G03-b.svg
+  - id: G03-c
+    label: "500×500"
+    dimensions_mm: { width: 500, height: 500 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G03-c.svg

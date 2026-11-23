@@ -1,0 +1,30 @@
+# I03 — Дверной проём
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: I03
+name_ru: "Дверной проём"
+name_en: "Doorway"
+category: interior
+scope: indoor            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: I03-a
+    label: "открыт"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/I03-a.svg
+  - id: I03-b
+    label: "приоткрыт"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/I03-b.svg

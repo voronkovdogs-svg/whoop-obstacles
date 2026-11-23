@@ -1,0 +1,35 @@
+# G01 — Круглое кольцо
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G01
+name_ru: "Круглое кольцо"
+name_en: "Ring gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G01-a
+    label: "Ø300"
+    dimensions_mm: { diameter: 300 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G01-a.svg
+  - id: G01-b
+    label: "Ø400"
+    dimensions_mm: { diameter: 400 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G01-b.svg
+  - id: G01-c
+    label: "Ø500"
+    dimensions_mm: { diameter: 500 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G01-c.svg

@@ -1,0 +1,25 @@
+# T04 — Квадратный тоннель из рамок
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: T04
+name_ru: "Квадратный тоннель из рамок"
+name_en: "Square frame tunnel"
+category: tunnels
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: T04-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/T04-a.svg

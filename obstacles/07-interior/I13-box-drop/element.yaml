@@ -1,0 +1,25 @@
+# I13 — Ящик для нырка (box drop)
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: I13
+name_ru: "Ящик для нырка (box drop)"
+name_en: "Box drop"
+category: interior
+scope: indoor            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: I13-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/I13-a.svg

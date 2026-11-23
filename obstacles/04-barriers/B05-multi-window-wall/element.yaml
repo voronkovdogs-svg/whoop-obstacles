@@ -1,0 +1,25 @@
+# B05 — Стенка с несколькими окнами
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: B05
+name_ru: "Стенка с несколькими окнами"
+name_en: "Multi-window wall"
+category: barriers
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: B05-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B05-a.svg

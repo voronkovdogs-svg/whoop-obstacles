@@ -1,0 +1,30 @@
+# M03 — Дорожный конус
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: M03
+name_ru: "Дорожный конус"
+name_en: "Traffic cone"
+category: markers
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: M03-a
+    label: "200 мм"
+    dimensions_mm: { height: 200 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/M03-a.svg
+  - id: M03-b
+    label: "450 мм"
+    dimensions_mm: { height: 450 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/M03-b.svg

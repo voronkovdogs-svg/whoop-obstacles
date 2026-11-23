@@ -1,0 +1,30 @@
+# S02 — Посадка
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: S02
+name_ru: "Посадка"
+name_en: "Landing"
+category: service
+scope: service            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: S02-a
+    label: "площадка"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/S02-a.svg
+  - id: S02-b
+    label: "мишень точной посадки"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/S02-b.svg

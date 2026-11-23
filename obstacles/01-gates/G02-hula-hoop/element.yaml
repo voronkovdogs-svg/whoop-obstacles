@@ -1,0 +1,30 @@
+# G02 — Обруч хула-хуп
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G02
+name_ru: "Обруч хула-хуп"
+name_en: "Hula hoop"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G02-a
+    label: "Ø600"
+    dimensions_mm: { diameter: 600 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G02-a.svg
+  - id: G02-b
+    label: "Ø800"
+    dimensions_mm: { diameter: 800 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G02-b.svg

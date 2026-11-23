@@ -1,0 +1,30 @@
+# G04 — Прямоугольные ворота
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G04
+name_ru: "Прямоугольные ворота"
+name_en: "Rectangular gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G04-a
+    label: "широкие 600×300"
+    dimensions_mm: { width: 600, height: 300 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G04-a.svg
+  - id: G04-b
+    label: "высокие 300×600"
+    dimensions_mm: { width: 300, height: 600 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G04-b.svg

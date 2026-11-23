@@ -1,0 +1,30 @@
+# B01 — Перекладина-барьер (перелёт сверху)
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: B01
+name_ru: "Перекладина-барьер (перелёт сверху)"
+name_en: "Hurdle bar"
+category: barriers
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: B01-a
+    label: "низкая"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B01-a.svg
+  - id: B01-b
+    label: "высокая"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B01-b.svg

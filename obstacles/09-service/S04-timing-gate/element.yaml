@@ -1,0 +1,25 @@
+# S04 — Ворота с хронометражем
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: S04
+name_ru: "Ворота с хронометражем"
+name_en: "Timing gate"
+category: service
+scope: service            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: S04-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/S04-a.svg

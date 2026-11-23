@@ -1,0 +1,30 @@
+# I08 — Крупная мебель
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: I08
+name_ru: "Крупная мебель"
+name_en: "Tall furniture"
+category: interior
+scope: indoor            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: I08-a
+    label: "шкаф"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/I08-a.svg
+  - id: I08-b
+    label: "холодильник"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/I08-b.svg

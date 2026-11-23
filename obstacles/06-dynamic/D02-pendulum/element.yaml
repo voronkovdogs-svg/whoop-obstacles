@@ -1,0 +1,30 @@
+# D02 — Маятник
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: D02
+name_ru: "Маятник"
+name_en: "Pendulum"
+category: dynamic
+scope: track            # track | indoor | outdoor | service
+behavior: dynamic         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+motion:               # только для dynamic
+  type: ""            # rotation | swing | linear | open-close
+  axis: ""            # x | y | z
+  period_s:           # период движения, с
+  amplitude: ""       # угол (°) или ход (мм)
+notes: ""
+
+variants:
+  - id: D02-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/D02-a.svg

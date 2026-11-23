@@ -1,0 +1,25 @@
+# S06 — Восьмёрка вокруг двух столбов
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: S06
+name_ru: "Восьмёрка вокруг двух столбов"
+name_en: "Figure-8 posts"
+category: service
+scope: service            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: S06-a
+    label: "std"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/S06-a.svg

@@ -1,0 +1,30 @@
+# M07 — Слалом
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: M07
+name_ru: "Слалом"
+name_en: "Slalom line"
+category: markers
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: M07-a
+    label: "4 столба"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/M07-a.svg
+  - id: M07-b
+    label: "6 столбов"
+    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/M07-b.svg

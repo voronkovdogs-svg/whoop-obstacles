@@ -1,0 +1,35 @@
+# B10 — Узкая щель
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: B10
+name_ru: "Узкая щель"
+name_en: "Gap"
+category: barriers
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: B10-a
+    label: "150 мм"
+    dimensions_mm: { gap: 150 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B10-a.svg
+  - id: B10-b
+    label: "200 мм"
+    dimensions_mm: { gap: 200 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B10-b.svg
+  - id: B10-c
+    label: "250 мм"
+    dimensions_mm: { gap: 250 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/B10-c.svg

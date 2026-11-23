@@ -1,0 +1,25 @@
+# G05 — Треугольные ворота
+# Общие поля элемента. Вариант может переопределить любое из них.
+id: G05
+name_ru: "Треугольные ворота"
+name_en: "Triangle gate"
+category: gates
+scope: track            # track | indoor | outdoor | service
+behavior: static         # static | dynamic
+status: draft           # draft | filled | reviewed
+
+description: ""         # как выглядит, из чего состоит
+real_analog: ""         # реальный предмет/аналог (без брендов)
+mount: ""               # floor | stand | hanging | wall | free
+material: ""
+rigidity: ""            # soft | semi | hard — поведение при ударе вупа
+color: ""
+difficulty:             # 1–5
+notes: ""
+
+variants:
+  - id: G05-a
+    label: "сторона 400"
+    dimensions_mm: { side: 400 }   # габариты: width/height/depth, diameter, length…
+    aperture_mm: {}   # проходной проём
+    drawing: drawings/G05-a.svg
