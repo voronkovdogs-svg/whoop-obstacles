@@ -5,26 +5,33 @@ name_ru: "Лимбо-планка (пролёт снизу)"
 name_en: "Limbo bar"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Горизонтальная планка из ПВХ-трубы Ø25 мм длиной 1000 мм на двух стойках Ø25 мм, стойки
+  выше планки на 100 мм. Т-образные ножки глубиной 300 мм. Пролёт — под планкой, между полом
+  и планкой.
+real_analog: "стойки с планкой для лимбо"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ-труба; ножки — пластик"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "планка в жёлто-чёрную полоску (#FDD835 / #212121), стойки чёрные"
+difficulty: 3          # 1–5
+notes: >-
+  Низкая планка заставляет лететь у самого пола, где вуп теряет стабильность из-за
+  отражённого потока. Ножки стоек выступают в проём на 150 мм вперёд и назад.
 
 variants:
   - id: B02-a
-    label: "низкая"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "низкая (ось планки 250 мм)"
+    difficulty: 4
+    dimensions_mm: { width: 1025, height: 350, depth: 300, bar: 25, bar_length: 1000, bar_axis: 250, post: 25 }
+    aperture_mm: { shape: "under", width: 975, height: 237, bottom: 0 }
     drawing: drawings/B02-a.svg
   - id: B02-b
-    label: "высокая"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "высокая (ось планки 450 мм)"
+    difficulty: 2
+    dimensions_mm: { width: 1025, height: 550, depth: 300, bar: 25, bar_length: 1000, bar_axis: 450, post: 25 }
+    aperture_mm: { shape: "under", width: 975, height: 437, bottom: 0 }
     drawing: drawings/B02-b.svg

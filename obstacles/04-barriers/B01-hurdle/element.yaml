@@ -5,26 +5,33 @@ name_ru: "Перекладина-барьер (перелёт сверху)"
 name_en: "Hurdle bar"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Горизонтальная планка из плавательной «лапши» Ø65 мм длиной 1000 мм лежит на открытых
+  крючках двух вертикальных стоек Ø25 мм. Стойки стоят на Т-образных ножках глубиной 300 мм.
+  Пролёт — над планкой.
+real_analog: "лёгкоатлетический барьер / стойки с планкой из pool noodle"
+mount: floor           # floor | stand | hanging | wall | free
+material: "вспененный полиэтилен; стойки — стеклопластик; ножки — пластик"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "планка красная #E53935, стойки белые"
+difficulty: 1          # 1–5
+notes: >-
+  Планка лежит на крючках и падает при касании — в симуляторе это можно засчитывать как
+  штраф. Сочетается с B02 для перепадов «над — под».
 
 variants:
   - id: B01-a
-    label: "низкая"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "низкая (ось планки 300 мм)"
+    difficulty: 1
+    dimensions_mm: { width: 1065, height: 380, depth: 300, bar: 65, bar_length: 1000, bar_axis: 300, post: 25 }
+    aperture_mm: { shape: "over", min_height: 333 }
     drawing: drawings/B01-a.svg
   - id: B01-b
-    label: "высокая"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "высокая (ось планки 600 мм)"
+    difficulty: 2
+    dimensions_mm: { width: 1065, height: 680, depth: 300, bar: 65, bar_length: 1000, bar_axis: 600, post: 25 }
+    aperture_mm: { shape: "over", min_height: 633 }
     drawing: drawings/B01-b.svg

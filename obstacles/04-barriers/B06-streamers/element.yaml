@@ -5,21 +5,27 @@ name_ru: "Свисающие ленты"
 name_en: "Streamer curtain"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Перекладина длиной 1000 мм на высоте 1200 мм на двух стойках с Т-ножками. С перекладины
+  свисают пластиковые ленты шириной 30 мм с шагом 50 мм, длина лент 900 мм — нижний край на
+  высоте 300 мм.
+real_analog: "ленточная шторка / занавес из лент"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэтиленовая плёнка; стойки и перекладина — ПВХ-труба"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "ленты чередуются: серебристые #CFD8DC и красные #E53935"
+difficulty: 2          # 1–5
+notes: >-
+  Ленты проходимы: дрон пролетает сквозь них, они отклоняются и закрывают обзор на
+  мгновение. Под лентами есть свободный просвет 300 мм. В симуляторе ленты — мягкие тела или
+  простая анимация.
 
 variants:
   - id: B06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1000×900"
+    dimensions_mm: { width: 1050, height: 1200, depth: 300, strip_width: 30, strip_step: 50, strip_length: 900 }
+    aperture_mm: { shape: "curtain", width: 1000, height: 900, bottom: 300 }
     drawing: drawings/B06-a.svg

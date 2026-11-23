@@ -5,21 +5,26 @@ name_ru: "Сетка-занавес"
 name_en: "Net curtain"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Лёгкая нейлоновая сетка (ячейка 50 мм) 1000×1000 мм, натянутая на перекладину и стойки,
+  нижний край на высоте 100 мм. В центре сетки — квадратный вырез 300×300 мм в жёсткой
+  рамке, нижний край выреза на высоте 450 мм.
+real_analog: "сетчатая перегородка с окном"
+mount: floor           # floor | stand | hanging | wall | free
+material: "нейлоновая сетка, рамка — ПВХ; стойки — ПВХ-труба"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "сетка чёрная #212121, рамка выреза оранжевая #FF6D00"
+difficulty: 3          # 1–5
+notes: >-
+  Сетка просвечивает — видно, что за ней. Попадание в сетку опасно: пропеллеры наматывают
+  нити, дрон застревает. В симуляторе удар в сетку = остановка и падение.
 
 variants:
   - id: B07-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1000×1000, окно 300"
+    dimensions_mm: { width: 1050, height: 1150, depth: 300, mesh: 50, net_width: 1000, net_height: 1000 }
+    aperture_mm: { shape: "rect", width: 300, height: 300, bottom: 450 }
     drawing: drawings/B07-a.svg

@@ -5,21 +5,25 @@ name_ru: "Сплошная стенка"
 name_en: "Solid wall panel"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Глухая вертикальная панель 1200×1000 мм из пенокартона 10 мм, стоит на полу, сзади две
+  треугольные подпорки глубиной 300 мм. По верхней кромке — контрастная полоса 50 мм.
+real_analog: "панель из пенокартона / ширма"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "серо-голубая #90A4AE, верхняя полоса белая #FFFFFF"
+difficulty: 1          # 1–5
+notes: >-
+  Закрывает обзор: обход сверху или сбоку. Используется, чтобы спрятать следующий элемент
+  трассы и разделить зоны.
 
 variants:
   - id: B03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1200×1000"
+    dimensions_mm: { width: 1200, height: 1000, depth: 300, thickness: 10 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/B03-a.svg

@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 52, filled: 33
+Элементов: **85**, вариантов: **112**. draft: 42, filled: 43
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -39,16 +39,16 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [M05](obstacles/03-markers/M05-pole/element.yaml) | Вертикальный шест / pool noodle | markers | track | static | 1 | 1/1 | filled |
 | [M06](obstacles/03-markers/M06-pylon/element.yaml) | Поворотный столб | markers | track | static | 1 | 1/1 | filled |
 | [M07](obstacles/03-markers/M07-slalom/element.yaml) | Слалом | markers | track | static | 2 | 2/2 | filled |
-| [B01](obstacles/04-barriers/B01-hurdle/element.yaml) | Перекладина-барьер (перелёт сверху) | barriers | track | static | 2 | 0/2 | draft |
-| [B02](obstacles/04-barriers/B02-limbo/element.yaml) | Лимбо-планка (пролёт снизу) | barriers | track | static | 2 | 0/2 | draft |
-| [B03](obstacles/04-barriers/B03-wall-panel/element.yaml) | Сплошная стенка | barriers | track | static | 1 | 0/1 | draft |
-| [B04](obstacles/04-barriers/B04-window-wall/element.yaml) | Стенка с окном | barriers | track | static | 2 | 0/2 | draft |
-| [B05](obstacles/04-barriers/B05-multi-window-wall/element.yaml) | Стенка с несколькими окнами | barriers | track | static | 1 | 0/1 | draft |
-| [B06](obstacles/04-barriers/B06-streamers/element.yaml) | Свисающие ленты | barriers | track | static | 1 | 0/1 | draft |
-| [B07](obstacles/04-barriers/B07-net-curtain/element.yaml) | Сетка-занавес | barriers | track | static | 1 | 0/1 | draft |
-| [B08](obstacles/04-barriers/B08-partition/element.yaml) | Ширма-перегородка | barriers | track | static | 1 | 0/1 | draft |
-| [B09](obstacles/04-barriers/B09-maze-segment/element.yaml) | Сегмент лабиринта | barriers | track | static | 1 | 0/1 | draft |
-| [B10](obstacles/04-barriers/B10-gap/element.yaml) | Узкая щель | barriers | track | static | 3 | 0/3 | draft |
+| [B01](obstacles/04-barriers/B01-hurdle/element.yaml) | Перекладина-барьер (перелёт сверху) | barriers | track | static | 2 | 2/2 | filled |
+| [B02](obstacles/04-barriers/B02-limbo/element.yaml) | Лимбо-планка (пролёт снизу) | barriers | track | static | 2 | 2/2 | filled |
+| [B03](obstacles/04-barriers/B03-wall-panel/element.yaml) | Сплошная стенка | barriers | track | static | 1 | 1/1 | filled |
+| [B04](obstacles/04-barriers/B04-window-wall/element.yaml) | Стенка с окном | barriers | track | static | 2 | 2/2 | filled |
+| [B05](obstacles/04-barriers/B05-multi-window-wall/element.yaml) | Стенка с несколькими окнами | barriers | track | static | 1 | 1/1 | filled |
+| [B06](obstacles/04-barriers/B06-streamers/element.yaml) | Свисающие ленты | barriers | track | static | 1 | 1/1 | filled |
+| [B07](obstacles/04-barriers/B07-net-curtain/element.yaml) | Сетка-занавес | barriers | track | static | 1 | 1/1 | filled |
+| [B08](obstacles/04-barriers/B08-partition/element.yaml) | Ширма-перегородка | barriers | track | static | 1 | 1/1 | filled |
+| [B09](obstacles/04-barriers/B09-maze-segment/element.yaml) | Сегмент лабиринта | barriers | track | static | 1 | 1/1 | filled |
+| [B10](obstacles/04-barriers/B10-gap/element.yaml) | Узкая щель | barriers | track | static | 3 | 3/3 | filled |
 | [C01](obstacles/05-combos/C01-split-s/element.yaml) | Split-S | combos | track | static | 1 | 0/1 | draft |
 | [C02](obstacles/05-combos/C02-hairpin/element.yaml) | Шпилька (разворот 180°) | combos | track | static | 1 | 0/1 | draft |
 | [C03](obstacles/05-combos/C03-chicane/element.yaml) | Шикана | combos | track | static | 1 | 0/1 | draft |

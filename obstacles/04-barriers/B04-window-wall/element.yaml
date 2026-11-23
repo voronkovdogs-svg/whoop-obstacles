@@ -5,26 +5,31 @@ name_ru: "Стенка с окном"
 name_en: "Wall with window"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Панель 1000×1000 мм из пенокартона 10 мм с одним вырезом по центру, центр окна на высоте
+  550 мм. Край окна обклеен белой лентой. Стоит на полу, сзади две треугольные подпорки
+  глубиной 300 мм.
+real_analog: "панель с вырезом"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон, клейкая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "красная #C62828, кант окна белый #FFFFFF"
+difficulty: 3          # 1–5
+notes: >-
+  Окно меньше обычных ворот и окружено сплошной стенкой: промах = удар в панель. Хорошо
+  тренирует точный вход по центру.
 
 variants:
   - id: B04-a
-    label: "круглое окно"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "круглое окно Ø300"
+    dimensions_mm: { width: 1000, height: 1000, depth: 300, thickness: 10 }
+    aperture_mm: { shape: "circle", diameter: 300, center_y: 550, bottom: 400 }
     drawing: drawings/B04-a.svg
   - id: B04-b
-    label: "прямоугольное окно"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "прямоугольное окно 350×250"
+    dimensions_mm: { width: 1000, height: 1000, depth: 300, thickness: 10 }
+    aperture_mm: { shape: "rect", width: 350, height: 250, center_y: 550, bottom: 425 }
     drawing: drawings/B04-b.svg

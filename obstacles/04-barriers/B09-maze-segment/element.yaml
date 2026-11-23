@@ -5,21 +5,26 @@ name_ru: "Сегмент лабиринта"
 name_en: "Maze segment"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Г-образный коридор без крыши из вертикальных панелей пенокартона высотой 600 мм: внешняя
+  стенка 1500 + 1500 мм, внутренняя 900 + 900 мм, ширина коридора 600 мм. Вход по прямой,
+  затем поворот налево на 90°. Панели стоят на кромке и скреплены уголками.
+real_analog: "модульные стенки-лабиринт"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон 10 мм, пластиковые уголки"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "белые #FAFAFA, верхние кромки чёрные #212121"
+difficulty: 3          # 1–5
+notes: >-
+  Пролёт внутри коридора ниже кромки стенок; срезать поверху — нарушение. Модуль стыкуется с
+  такими же сегментами в лабиринт. Поворот вправо — зеркалирование по X.
 
 variants:
   - id: B09-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std, поворот 90° влево"
+    dimensions_mm: { width: 1500, height: 600, depth: 1500, corridor_width: 600, wall: 10 }
+    aperture_mm: { shape: "corridor", width: 600, height: 600, bottom: 0, turn: "90° влево" }
     drawing: drawings/B09-a.svg

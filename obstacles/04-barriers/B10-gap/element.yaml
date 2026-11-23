@@ -5,31 +5,39 @@ name_ru: "Узкая щель"
 name_en: "Gap"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Две вертикальные панели 600×1000 мм из пенокартона 10 мм стоят в одной плоскости, между
+  ними — вертикальная щель на всю высоту. Кромки у щели обклеены белой лентой. Сзади у
+  каждой панели треугольная подпорка глубиной 300 мм.
+real_analog: "две панели с зазором"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон, клейкая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "оранжевые #F57C00, кромки щели белые #FFFFFF"
+difficulty: 4          # 1–5
+notes: >-
+  Габарит вупа с защитой около 90–100 мм: щель 150 мм оставляет по 25 мм с каждой стороны.
+  Высота пролёта свободная — важна только точность по горизонтали.
 
 variants:
   - id: B10-a
     label: "150 мм"
-    dimensions_mm: { gap: 150 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 5
+    dimensions_mm: { width: 1350, height: 1000, depth: 300, panel_width: 600, thickness: 10, gap: 150 }
+    aperture_mm: { shape: "slot", width: 150, height: 1000, bottom: 0 }
     drawing: drawings/B10-a.svg
   - id: B10-b
     label: "200 мм"
-    dimensions_mm: { gap: 200 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 4
+    dimensions_mm: { width: 1400, height: 1000, depth: 300, panel_width: 600, thickness: 10, gap: 200 }
+    aperture_mm: { shape: "slot", width: 200, height: 1000, bottom: 0 }
     drawing: drawings/B10-b.svg
   - id: B10-c
     label: "250 мм"
-    dimensions_mm: { gap: 250 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 1450, height: 1000, depth: 300, panel_width: 600, thickness: 10, gap: 250 }
+    aperture_mm: { shape: "slot", width: 250, height: 1000, bottom: 0 }
     drawing: drawings/B10-c.svg

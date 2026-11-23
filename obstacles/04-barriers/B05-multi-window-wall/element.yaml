@@ -5,21 +5,27 @@ name_ru: "Стенка с несколькими окнами"
 name_en: "Multi-window wall"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Панель 1200×1000 мм из пенокартона 10 мм с четырьмя окнами разной формы и размера в сетке
+  2×2: сверху слева круг Ø350, сверху справа квадрат 250, снизу слева квадрат 300, снизу
+  справа круг Ø200. Центры окон — x = ±300 мм, y = 300 и 700 мм. Края окон обклеены жёлтой
+  лентой.
+real_analog: "тренировочная панель с окнами"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон, клейкая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "тёмно-серая #455A64, кант окон жёлтый #FFD600"
+difficulty: 3          # 1–5
+notes: >-
+  Пилот или тренер выбирает окно: от простого (Ø350) до сложного (Ø200, сложность 5). Окна
+  пронумерованы 1–4 слева направо, сверху вниз.
 
 variants:
   - id: B05-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1200×1000, 4 окна"
+    dimensions_mm: { width: 1200, height: 1000, depth: 300, thickness: 10 }
+    aperture_mm: { shape: "windows", windows: "1: Ø350 (-300,700); 2: □250 (300,700); 3: □300 (-300,300); 4: Ø200 (300,300)", min_bottom: 150 }
     drawing: drawings/B05-a.svg

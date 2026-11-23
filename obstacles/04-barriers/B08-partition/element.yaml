@@ -5,21 +5,25 @@ name_ru: "Ширма-перегородка"
 name_en: "Partition screen"
 category: barriers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Складная ширма из трёх створок 500×1200 мм, створки поставлены зигзагом под углом 30° к
+  фронту. Каркас — лёгкие алюминиевые рамки, натянута непрозрачная ткань.
+real_analog: "складная интерьерная ширма"
+mount: floor           # floor | stand | hanging | wall | free
+material: "алюминиевый профиль, полиэстер"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ткань тёмно-синяя #283593, рамки серебристые"
+difficulty: 1          # 1–5
+notes: >-
+  Высокая визуальная преграда: прячет часть трассы, заставляет облетать сбоку или поверху.
+  Створки можно ставить в любой зигзаг.
 
 variants:
   - id: B08-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 3 створки"
+    dimensions_mm: { width: 1300, height: 1200, depth: 250, panel_width: 500, panels: 3, angle: 30 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/B08-a.svg
