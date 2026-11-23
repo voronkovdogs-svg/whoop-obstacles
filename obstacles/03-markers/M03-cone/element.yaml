@@ -5,26 +5,30 @@ name_ru: "Дорожный конус"
 name_en: "Traffic cone"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Классический конус из гибкого ПВХ на квадратном основании. Тело — усечённый конус, на нём
+  белые светоотражающие полосы. Внутри полый.
+real_analog: "дорожный / спортивный конус"
+mount: floor           # floor | stand | hanging | wall | free
+material: "гибкий ПВХ"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "оранжевый #FF6D00, полосы белые #FFFFFF"
+difficulty: 1          # 1–5
+notes: >-
+  Низкий ориентир: обозначает внутреннюю точку поворота или край трассы. Удобен для
+  упражнений на облёт на малой высоте.
 
 variants:
   - id: M03-a
     label: "200 мм"
-    dimensions_mm: { height: 200 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 140, height: 200, depth: 140, base_height: 10, body_bottom: 110, body_top: 30, bands: 1 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M03-a.svg
   - id: M03-b
     label: "450 мм"
-    dimensions_mm: { height: 450 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 290, height: 450, depth: 290, base_height: 25, body_bottom: 230, body_top: 50, bands: 2 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M03-b.svg

@@ -5,26 +5,32 @@ name_ru: "Слалом"
 name_en: "Slalom line"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Ряд вертикальных шестов Ø25 мм высотой 1200 мм на круглых основаниях Ø150 мм, выставленных
+  по прямой с шагом 700 мм. Цвета шестов чередуются.
+real_analog: "слаломные шесты"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ-труба; основание — резина"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "шесты чередуются: красный #E53935 / синий #1E88E5"
+difficulty: 2          # 1–5
+notes: >-
+  Проходится «змейкой»: шесты огибаются поочерёдно слева и справа. Зазор между шестами 675
+  мм. Шесты слегка гнутся и качаются при касании.
 
 variants:
   - id: M07-a
-    label: "4 столба"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "4 столбов"
+    difficulty: 2
+    dimensions_mm: { width: 150, height: 1200, depth: 2250, poles: 4, pole: 25, spacing: 700, base_diameter: 150 }
+    aperture_mm: { shape: "slalom", gap: 675 }
     drawing: drawings/M07-a.svg
   - id: M07-b
     label: "6 столбов"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 150, height: 1200, depth: 3650, poles: 6, pole: 25, spacing: 700, base_diameter: 150 }
+    aperture_mm: { shape: "slalom", gap: 675 }
     drawing: drawings/M07-b.svg

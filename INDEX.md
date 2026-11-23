@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 59, filled: 26
+Элементов: **85**, вариантов: **112**. draft: 52, filled: 33
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -32,13 +32,13 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [T07](obstacles/02-tunnels/T07-l-exit-up/element.yaml) | Тоннель с выходом вверх | tunnels | track | static | 1 | 1/1 | filled |
 | [T08](obstacles/02-tunnels/T08-y-fork/element.yaml) | Тоннель-развилка | tunnels | track | static | 1 | 1/1 | filled |
 | [T09](obstacles/02-tunnels/T09-windows/element.yaml) | Тоннель с боковыми окнами | tunnels | track | static | 1 | 1/1 | filled |
-| [M01](obstacles/03-markers/M01-beach-flag/element.yaml) | Флаг-парус | markers | track | static | 2 | 0/2 | draft |
-| [M02](obstacles/03-markers/M02-feather-flag/element.yaml) | Флаг-перо | markers | track | static | 1 | 0/1 | draft |
-| [M03](obstacles/03-markers/M03-cone/element.yaml) | Дорожный конус | markers | track | static | 2 | 0/2 | draft |
-| [M04](obstacles/03-markers/M04-disc-cones/element.yaml) | Тренировочные фишки | markers | track | static | 1 | 0/1 | draft |
-| [M05](obstacles/03-markers/M05-pole/element.yaml) | Вертикальный шест / pool noodle | markers | track | static | 1 | 0/1 | draft |
-| [M06](obstacles/03-markers/M06-pylon/element.yaml) | Поворотный столб | markers | track | static | 1 | 0/1 | draft |
-| [M07](obstacles/03-markers/M07-slalom/element.yaml) | Слалом | markers | track | static | 2 | 0/2 | draft |
+| [M01](obstacles/03-markers/M01-beach-flag/element.yaml) | Флаг-парус | markers | track | static | 2 | 2/2 | filled |
+| [M02](obstacles/03-markers/M02-feather-flag/element.yaml) | Флаг-перо | markers | track | static | 1 | 1/1 | filled |
+| [M03](obstacles/03-markers/M03-cone/element.yaml) | Дорожный конус | markers | track | static | 2 | 2/2 | filled |
+| [M04](obstacles/03-markers/M04-disc-cones/element.yaml) | Тренировочные фишки | markers | track | static | 1 | 1/1 | filled |
+| [M05](obstacles/03-markers/M05-pole/element.yaml) | Вертикальный шест / pool noodle | markers | track | static | 1 | 1/1 | filled |
+| [M06](obstacles/03-markers/M06-pylon/element.yaml) | Поворотный столб | markers | track | static | 1 | 1/1 | filled |
+| [M07](obstacles/03-markers/M07-slalom/element.yaml) | Слалом | markers | track | static | 2 | 2/2 | filled |
 | [B01](obstacles/04-barriers/B01-hurdle/element.yaml) | Перекладина-барьер (перелёт сверху) | barriers | track | static | 2 | 0/2 | draft |
 | [B02](obstacles/04-barriers/B02-limbo/element.yaml) | Лимбо-планка (пролёт снизу) | barriers | track | static | 2 | 0/2 | draft |
 | [B03](obstacles/04-barriers/B03-wall-panel/element.yaml) | Сплошная стенка | barriers | track | static | 1 | 0/1 | draft |

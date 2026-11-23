@@ -5,21 +5,25 @@ name_ru: "Поворотный столб"
 name_en: "Turn pylon"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Жёсткая колонна Ø110 мм высотой 1500 мм на квадратном основании 300×300×20 мм. Колонна
+  обклеена чередующимися полосами по 200 мм.
+real_analog: "колонна из ПВХ-трубы в полосатой обмотке"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ-труба, виниловая плёнка; основание — фанера/пластик"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "полосы жёлтые #FDD835 и чёрные #212121"
+difficulty: 2          # 1–5
+notes: >-
+  Точка разворота на 180°: облёт по малому радиусу вокруг жёсткой колонны. Полосы помогают
+  оценивать дистанцию и высоту.
 
 variants:
   - id: M06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1,5 м"
+    dimensions_mm: { width: 300, height: 1520, depth: 300, column: 110, stripe: 200, base: 300 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M06-a.svg

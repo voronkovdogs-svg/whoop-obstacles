@@ -5,21 +5,26 @@ name_ru: "Флаг-перо"
 name_en: "Feather flag"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Высокий узкий тканевый флаг на гибком древке: передняя кромка вдоль древка, задняя —
+  прямая вертикальная, верх скруглён и загнут вслед за изогнутым концом древка. Основание
+  круглое утяжелённое, высота 30 мм.
+real_analog: "рекламный флаг-перо (feather flag), уменьшенный"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, стеклопластик; основание — резина/пластик с утяжелителем"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "полотно синее #1E88E5, древко белое"
+difficulty: 1          # 1–5
+notes: >-
+  Выше и уже паруса M01 — хорошо виден издалека и задаёт высоту. Огибаемый ориентир, проёма
+  нет.
 
 variants:
   - id: M02-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1,6 м"
+    dimensions_mm: { width: 475, height: 1600, depth: 250, pole: 10, sail_width: 350, sail_height: 1300, base_diameter: 250 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M02-a.svg

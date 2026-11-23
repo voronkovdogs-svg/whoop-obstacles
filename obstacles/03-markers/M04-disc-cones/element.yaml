@@ -5,21 +5,25 @@ name_ru: "Тренировочные фишки"
 name_en: "Disc cones"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Низкая пластиковая «тарелка»-фишка: широкое основание Ø190 мм, пологие стенки и отверстие
+  Ø50 мм сверху. Лежит на полу, обычно расставляется рядами или по контуру.
+real_analog: "спортивные фишки-разметчики"
+mount: floor           # floor | stand | hanging | wall | free
+material: "мягкий полиэтилен"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "жёлтая #FDD835 (в наборе также оранжевые, красные, синие)"
+difficulty: 1          # 1–5
+notes: >-
+  Почти не мешает полёту — это разметка: граница трассы, линия старта, точка посадки или
+  облёта на малой высоте.
 
 variants:
   - id: M04-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std Ø190"
+    dimensions_mm: { width: 190, height: 50, depth: 190, top_hole: 50 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M04-a.svg

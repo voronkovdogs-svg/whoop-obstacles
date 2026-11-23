@@ -5,26 +5,31 @@ name_ru: "Флаг-парус"
 name_en: "Beach flag"
 category: markers
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевый флаг в форме паруса на гибком стеклопластиковом древке. Передняя кромка паруса
+  пришита к древку, верх плавно скруглён к задней кромке, низ паруса — горизонтальный.
+  Древко вставлено в круглое утяжелённое основание высотой 30 мм.
+real_analog: "рекламный флаг-парус (beach flag), уменьшенный"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, стеклопластик; основание — резина/пластик с утяжелителем"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "парус красный #E53935, древко белое"
+difficulty: 1          # 1–5
+notes: >-
+  Огибаемый ориентир: проёма нет. Парус большой и лёгкий — при касании дрон сминает ткань, а
+  древко пружинит. Ставят на поворотах трассы и как заметную точку разворота.
 
 variants:
   - id: M01-a
     label: "мини ~1 м"
-    dimensions_mm: { height: 1000 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 400, height: 1000, depth: 200, pole: 8, sail_width: 300, sail_height: 750, base_diameter: 200 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M01-a.svg
   - id: M01-b
-    label: "стандарт"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "стандарт 1,5 м"
+    dimensions_mm: { width: 575, height: 1500, depth: 250, pole: 10, sail_width: 450, sail_height: 1150, base_diameter: 250 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/M01-b.svg

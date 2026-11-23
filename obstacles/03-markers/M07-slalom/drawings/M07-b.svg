@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720">
+
+<style>
+  .dim{stroke:#555;stroke-width:0.9;fill:none;marker-start:url(#ar);marker-end:url(#ar)}
+  .dim.in{stroke:#0057B8}
+  .ext{stroke:#888;stroke-width:0.6}
+  .dt{font-size:12px;fill:#333;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+  .dt.in{fill:#0057B8}
+  .fl{stroke:#2E7D32;stroke-width:2;marker-end:url(#fa)}
+  .ft{font-size:11px;fill:#2E7D32;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px}
+  .incircle{fill:none;stroke:#0057B8;stroke-width:0.8;stroke-dasharray:4 3}
+  text{font-family:Arial,Helvetica,sans-serif}
+</style>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7"
+          orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#555"/></marker>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+  <linearGradient id="cylv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <linearGradient id="cylh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+
+<rect width="1000" height="720" fill="#fff"/>
+<rect x="10" y="10" width="980" height="700" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="30" y="46" font-size="22" font-weight="bold" fill="#222">M07-b · Слалом</text>
+<text x="30" y="72" font-size="14" fill="#555">Вариант: 6 столбов  ·  Slalom line  ·  размеры в мм  ·  1 px ≈ 9.3 мм</text>
+<line x1="660" y1="90" x2="660" y2="670" stroke="#ddd"/>
+<text x="40" y="104" font-size="13" fill="#888">Вид сверху: траектория</text>
+<text x="680" y="104" font-size="13" fill="#888">Шест, вид спереди · свой масштаб</text>
+<path d="M105.0,380.0 L107.1,378.1 L109.7,375.3 L112.6,371.9 L115.8,368.0 L119.4,363.9 L123.2,359.7 L127.4,355.8 L131.7,352.4 L136.3,349.6 L141.0,347.7 L145.9,347.0 L150.9,347.6 L156.2,350.0 L161.8,354.3 L167.7,360.0 L173.9,366.8 L180.3,374.3 L186.9,382.0 L193.5,389.7 L200.2,396.8 L206.9,403.0 L213.6,408.0 L220.2,411.2 L226.6,412.4 L232.9,411.1 L239.2,407.6 L245.5,402.3 L251.8,395.6 L258.1,388.0 L264.4,380.0 L270.7,372.0 L277.0,364.4 L283.3,357.7 L289.6,352.4 L295.9,348.9 L302.2,347.6 L308.5,348.9 L314.8,352.4 L321.1,357.7 L327.4,364.4 L333.7,372.0 L340.0,380.0 L346.3,388.0 L352.6,395.6 L358.9,402.3 L365.2,407.6 L371.5,411.1 L377.8,412.4 L384.1,411.1 L390.4,407.6 L396.7,402.3 L403.0,395.6 L409.3,388.0 L415.6,380.0 L421.9,372.0 L428.2,364.4 L434.5,357.7 L440.8,352.4 L447.1,348.9 L453.4,347.6 L459.8,348.8 L466.4,352.0 L473.1,357.0 L479.8,363.2 L486.5,370.3 L493.1,378.0 L499.7,385.7 L506.1,393.2 L512.3,400.0 L518.2,405.7 L523.8,410.0 L529.1,412.4 L534.1,413.0 L539.0,412.3 L543.7,410.4 L548.3,407.6 L552.6,404.2 L556.8,400.3 L560.6,396.1 L564.2,392.0 L567.4,388.1 L570.3,384.7 L572.9,381.9 L575.0,380.0" fill="none" stroke="#2E7D32" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#fa)"/>
+<circle cx="150.9" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="150.9" cy="380.0" r="2.0" fill="#E53935" stroke="#222" stroke-width="1.2"/>
+<circle cx="226.6" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="226.6" cy="380.0" r="2.0" fill="#1E88E5" stroke="#222" stroke-width="1.2"/>
+<circle cx="302.2" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="302.2" cy="380.0" r="2.0" fill="#E53935" stroke="#222" stroke-width="1.2"/>
+<circle cx="377.8" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="377.8" cy="380.0" r="2.0" fill="#1E88E5" stroke="#222" stroke-width="1.2"/>
+<circle cx="453.4" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="453.4" cy="380.0" r="2.0" fill="#E53935" stroke="#222" stroke-width="1.2"/>
+<circle cx="529.1" cy="380.0" r="8.1" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="529.1" cy="380.0" r="2.0" fill="#1E88E5" stroke="#222" stroke-width="1.2"/>
+<line x1="150.9" y1="377.0" x2="150.9" y2="307.0" class="ext"/>
+<line x1="226.6" y1="377.0" x2="226.6" y2="307.0" class="ext"/>
+<line x1="150.9" y1="310.0" x2="226.6" y2="310.0" class="dim"/>
+<text x="188.7" y="306.0" class="dt">700</text>
+<line x1="142.8" y1="415.4" x2="142.8" y2="455.4" class="ext"/>
+<line x1="537.2" y1="415.4" x2="537.2" y2="455.4" class="ext"/>
+<line x1="142.8" y1="452.4" x2="537.2" y2="452.4" class="dim"/>
+<text x="340.0" y="448.4" class="dt">3650</text>
+<line x1="578.0" y1="380.0" x2="598.0" y2="380.0" class="ext"/>
+<line x1="578.0" y1="347.6" x2="598.0" y2="347.6" class="ext"/>
+<line x1="595.0" y1="380.0" x2="595.0" y2="347.6" class="dim"/>
+<text x="600.0" y="363.8" class="dt" transform="rotate(-90 600.0 363.8)" dy="10">≈300</text>
+<text x="107.2" y="374.6" font-size="11" text-anchor="start" fill="#2E7D32" >заход</text>
+<line x1="678" y1="585.0" x2="962" y2="585.0" stroke="#888" stroke-width="1.5"/>
+<line x1="678" y1="586.0" x2="671" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="690" y1="586.0" x2="683" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="702" y1="586.0" x2="695" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="714" y1="586.0" x2="707" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="726" y1="586.0" x2="719" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="738" y1="586.0" x2="731" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="750" y1="586.0" x2="743" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="762" y1="586.0" x2="755" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="774" y1="586.0" x2="767" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="786" y1="586.0" x2="779" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="798" y1="586.0" x2="791" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="810" y1="586.0" x2="803" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="822" y1="586.0" x2="815" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="834" y1="586.0" x2="827" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="846" y1="586.0" x2="839" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="858" y1="586.0" x2="851" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="870" y1="586.0" x2="863" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="882" y1="586.0" x2="875" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="894" y1="586.0" x2="887" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="906" y1="586.0" x2="899" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="918" y1="586.0" x2="911" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="930" y1="586.0" x2="923" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="942" y1="586.0" x2="935" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="954" y1="586.0" x2="947" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<rect x="794.4" y="578.2" width="51.2" height="6.8" fill="#424242" stroke="#222" stroke-width="1.2" />
+<rect x="815.7" y="175.0" width="8.5" height="403.2" fill="#E53935" stroke="#222" stroke-width="1.2" />
+<rect x="815.7" y="175.0" width="8.5" height="403.2" fill="url(#cylh)" stroke="#222" stroke-width="1.2" />
+<line x1="848.6" y1="585.0" x2="876.6" y2="585.0" class="ext"/>
+<line x1="848.6" y1="175.0" x2="876.6" y2="175.0" class="ext"/>
+<line x1="873.6" y1="585.0" x2="873.6" y2="175.0" class="dim"/>
+<text x="878.6" y="380.0" class="dt" transform="rotate(-90 878.6 380.0)" dy="10">1200</text>
+<line x1="794.4" y1="588.0" x2="794.4" y2="618.0" class="ext"/>
+<line x1="845.6" y1="588.0" x2="845.6" y2="618.0" class="ext"/>
+<line x1="794.4" y1="615.0" x2="845.6" y2="615.0" class="dim"/>
+<text x="820.0" y="611.0" class="dt">Ø150</text>
+<line x1="815.7" y1="172.0" x2="815.7" y2="150.0" class="ext"/>
+<line x1="824.3" y1="172.0" x2="824.3" y2="150.0" class="ext"/>
+<line x1="815.7" y1="153.0" x2="824.3" y2="153.0" class="dim"/>
+<text x="820.0" y="149.0" class="dt">Ø25</text>
+<line x1="10" y1="678" x2="990" y2="678" stroke="#333"/>
+<text x="30" y="700" font-size="12" fill="#444">Материал: ПВХ-труба; основание — резина  ·  Жёсткость: semi  ·  Крепление: floor  ·  Сложность: 3/5</text>
+</svg>

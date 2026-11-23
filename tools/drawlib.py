@@ -240,12 +240,15 @@ def build(path, builders, two_color=()):
             ymin, ymax = min(fext[2], sext[2]), max(fext[3], sext[3])
             fext = (fext[0], fext[1], ymin, ymax)
             sext = (sext[0], sext[1], ymin, ymax)
-        k = min((FRONT_BOX[2] - 2 * PAD) / (fext[1] - fext[0]),
-                (SIDE_BOX[2] - 2 * SIDE_PAD_X) / max(sext[1] - sext[0], 1),
-                (FRONT_BOX[3] - 2 * PAD) / (fext[3] - fext[2]),
-                (SIDE_BOX[3] - 2 * PAD) / (sext[3] - sext[2]))
+        kf = min((FRONT_BOX[2] - 2 * PAD) / (fext[1] - fext[0]), (FRONT_BOX[3] - 2 * PAD) / (fext[3] - fext[2]))
+        ks = min((SIDE_BOX[2] - 2 * SIDE_PAD_X) / max(sext[1] - sext[0], 1),
+                 (SIDE_BOX[3] - 2 * PAD) / (sext[3] - sext[2]))
+        independent = sp.get("independent", False)   # разный масштаб видов (когда они несоизмеримы)
+        k = kf if independent else min(kf, ks)
         fv = View(FRONT_BOX, fext, k, floor=mn["floor"])
-        sv = View(SIDE_BOX, sext, k, floor=ax["floor"])
+        sv = View(SIDE_BOX, sext, ks if independent else k, floor=ax["floor"])
+        if independent:
+            ax = dict(ax, title=ax["title"] + " · свой масштаб")
         fv.draw_floor()
         sv.draw_floor()
         mn["draw"](fv)

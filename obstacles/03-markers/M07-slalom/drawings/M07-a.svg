@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720">
+
+<style>
+  .dim{stroke:#555;stroke-width:0.9;fill:none;marker-start:url(#ar);marker-end:url(#ar)}
+  .dim.in{stroke:#0057B8}
+  .ext{stroke:#888;stroke-width:0.6}
+  .dt{font-size:12px;fill:#333;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+  .dt.in{fill:#0057B8}
+  .fl{stroke:#2E7D32;stroke-width:2;marker-end:url(#fa)}
+  .ft{font-size:11px;fill:#2E7D32;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px}
+  .incircle{fill:none;stroke:#0057B8;stroke-width:0.8;stroke-dasharray:4 3}
+  text{font-family:Arial,Helvetica,sans-serif}
+</style>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7"
+          orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#555"/></marker>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+  <linearGradient id="cylv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <linearGradient id="cylh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+
+<rect width="1000" height="720" fill="#fff"/>
+<rect x="10" y="10" width="980" height="700" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="30" y="46" font-size="22" font-weight="bold" fill="#222">M07-a · Слалом</text>
+<text x="30" y="72" font-size="14" fill="#555">Вариант: 4 столбов  ·  Slalom line  ·  размеры в мм  ·  1 px ≈ 6.3 мм</text>
+<line x1="660" y1="90" x2="660" y2="670" stroke="#ddd"/>
+<text x="40" y="104" font-size="13" fill="#888">Вид сверху: траектория</text>
+<text x="680" y="104" font-size="13" fill="#888">Шест, вид спереди · свой масштаб</text>
+<path d="M105.0,380.0 L108.1,377.2 L111.9,373.1 L116.1,368.1 L120.9,362.3 L126.2,356.2 L131.9,350.1 L138.0,344.4 L144.4,339.3 L151.1,335.2 L158.1,332.4 L165.3,331.3 L172.7,332.2 L180.5,335.8 L188.8,342.1 L197.5,350.5 L206.6,360.5 L216.1,371.5 L225.7,383.0 L235.5,394.3 L245.4,404.8 L255.3,414.0 L265.1,421.3 L274.8,426.1 L284.2,427.8 L293.5,425.9 L302.8,420.7 L312.1,412.9 L321.4,403.0 L330.7,391.8 L340.0,380.0 L349.3,368.2 L358.6,357.0 L367.9,347.1 L377.2,339.3 L386.5,334.1 L395.8,332.2 L405.2,333.9 L414.9,338.7 L424.7,346.0 L434.6,355.2 L444.5,365.7 L454.3,377.0 L463.9,388.5 L473.4,399.5 L482.5,409.5 L491.2,417.9 L499.5,424.2 L507.3,427.8 L514.7,428.7 L521.9,427.6 L528.9,424.8 L535.6,420.7 L542.0,415.6 L548.1,409.9 L553.8,403.8 L559.1,397.7 L563.9,391.9 L568.1,386.9 L571.9,382.8 L575.0,380.0" fill="none" stroke="#2E7D32" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="7 5" marker-end="url(#fa)"/>
+<circle cx="172.7" cy="380.0" r="11.9" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="172.7" cy="380.0" r="2.9" fill="#E53935" stroke="#222" stroke-width="1.2"/>
+<circle cx="284.2" cy="380.0" r="11.9" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="284.2" cy="380.0" r="2.9" fill="#1E88E5" stroke="#222" stroke-width="1.2"/>
+<circle cx="395.8" cy="380.0" r="11.9" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="395.8" cy="380.0" r="2.9" fill="#E53935" stroke="#222" stroke-width="1.2"/>
+<circle cx="507.3" cy="380.0" r="11.9" fill="#424242" stroke="#222" stroke-width="1.2"/>
+<circle cx="507.3" cy="380.0" r="2.9" fill="#1E88E5" stroke="#222" stroke-width="1.2"/>
+<line x1="172.7" y1="377.0" x2="172.7" y2="307.0" class="ext"/>
+<line x1="284.2" y1="377.0" x2="284.2" y2="307.0" class="ext"/>
+<line x1="172.7" y1="310.0" x2="284.2" y2="310.0" class="dim"/>
+<text x="228.5" y="306.0" class="dt">700</text>
+<line x1="160.8" y1="430.8" x2="160.8" y2="470.8" class="ext"/>
+<line x1="519.2" y1="430.8" x2="519.2" y2="470.8" class="ext"/>
+<line x1="160.8" y1="467.8" x2="519.2" y2="467.8" class="dim"/>
+<text x="340.0" y="463.8" class="dt">2250</text>
+<line x1="578.0" y1="380.0" x2="598.0" y2="380.0" class="ext"/>
+<line x1="578.0" y1="332.2" x2="598.0" y2="332.2" class="ext"/>
+<line x1="595.0" y1="380.0" x2="595.0" y2="332.2" class="dim"/>
+<text x="600.0" y="356.1" class="dt" transform="rotate(-90 600.0 356.1)" dy="10">≈300</text>
+<text x="108.2" y="372.0" font-size="11" text-anchor="start" fill="#2E7D32" >заход</text>
+<line x1="678" y1="585.0" x2="962" y2="585.0" stroke="#888" stroke-width="1.5"/>
+<line x1="678" y1="586.0" x2="671" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="690" y1="586.0" x2="683" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="702" y1="586.0" x2="695" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="714" y1="586.0" x2="707" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="726" y1="586.0" x2="719" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="738" y1="586.0" x2="731" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="750" y1="586.0" x2="743" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="762" y1="586.0" x2="755" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="774" y1="586.0" x2="767" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="786" y1="586.0" x2="779" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="798" y1="586.0" x2="791" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="810" y1="586.0" x2="803" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="822" y1="586.0" x2="815" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="834" y1="586.0" x2="827" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="846" y1="586.0" x2="839" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="858" y1="586.0" x2="851" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="870" y1="586.0" x2="863" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="882" y1="586.0" x2="875" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="894" y1="586.0" x2="887" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="906" y1="586.0" x2="899" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="918" y1="586.0" x2="911" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="930" y1="586.0" x2="923" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="942" y1="586.0" x2="935" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<line x1="954" y1="586.0" x2="947" y2="593.0" stroke="#888" stroke-width="0.8"/>
+<rect x="794.4" y="578.2" width="51.2" height="6.8" fill="#424242" stroke="#222" stroke-width="1.2" />
+<rect x="815.7" y="175.0" width="8.5" height="403.2" fill="#E53935" stroke="#222" stroke-width="1.2" />
+<rect x="815.7" y="175.0" width="8.5" height="403.2" fill="url(#cylh)" stroke="#222" stroke-width="1.2" />
+<line x1="848.6" y1="585.0" x2="876.6" y2="585.0" class="ext"/>
+<line x1="848.6" y1="175.0" x2="876.6" y2="175.0" class="ext"/>
+<line x1="873.6" y1="585.0" x2="873.6" y2="175.0" class="dim"/>
+<text x="878.6" y="380.0" class="dt" transform="rotate(-90 878.6 380.0)" dy="10">1200</text>
+<line x1="794.4" y1="588.0" x2="794.4" y2="618.0" class="ext"/>
+<line x1="845.6" y1="588.0" x2="845.6" y2="618.0" class="ext"/>
+<line x1="794.4" y1="615.0" x2="845.6" y2="615.0" class="dim"/>
+<text x="820.0" y="611.0" class="dt">Ø150</text>
+<line x1="815.7" y1="172.0" x2="815.7" y2="150.0" class="ext"/>
+<line x1="824.3" y1="172.0" x2="824.3" y2="150.0" class="ext"/>
+<line x1="815.7" y1="153.0" x2="824.3" y2="153.0" class="dim"/>
+<text x="820.0" y="149.0" class="dt">Ø25</text>
+<line x1="10" y1="678" x2="990" y2="678" stroke="#333"/>
+<text x="30" y="700" font-size="12" fill="#444">Материал: ПВХ-труба; основание — резина  ·  Жёсткость: semi  ·  Крепление: floor  ·  Сложность: 2/5</text>
+</svg>
