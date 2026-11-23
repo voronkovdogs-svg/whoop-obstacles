@@ -5,26 +5,32 @@ name_ru: "Обруч хула-хуп"
 name_en: "Hula hoop"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Жёсткий обруч из полой пластиковой трубки Ø18 мм. Стоит вертикально, нижней точкой в
+  прорези подставки 200×40×120 мм. Однотонный, глянцевый.
+real_analog: "гимнастический обруч (хула-хуп)"
+mount: stand           # floor | stand | hanging | wall | free
+material: "ПВХ / полиэтилен, полая трубка"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "однотонный яркий; по вариантам"
+difficulty: 1          # 1–5
+notes: >-
+  Жёсткий, в отличие от тканевых ворот: удар даёт резкий отскок или падение дрона. Большой
+  проём, подходит новичкам и для разминки.
 
 variants:
   - id: G02-a
-    label: "Ø600"
-    dimensions_mm: { diameter: 600 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "Ø610 (24″)"
+    color: "красный #E53935"
+    dimensions_mm: { width: 610, height: 610, depth: 120, diameter: 610, tube: 18 }
+    aperture_mm: { shape: "circle", diameter: 574, bottom: 18 }
     drawing: drawings/G02-a.svg
   - id: G02-b
-    label: "Ø800"
-    dimensions_mm: { diameter: 800 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "Ø760 (30″)"
+    color: "синий #1E88E5"
+    dimensions_mm: { width: 760, height: 760, depth: 120, diameter: 760, tube: 18 }
+    aperture_mm: { shape: "circle", diameter: 724, bottom: 18 }
     drawing: drawings/G02-b.svg

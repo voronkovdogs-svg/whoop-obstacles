@@ -5,26 +5,33 @@ name_ru: "Сетка ворот"
 name_en: "Grid gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Рама из белой ПВХ-трубы Ø20 мм, разделённая на квадратные ячейки 250×250 мм в свету. Стоит
+  на двух Т-образных ножках, нижний край рамы на высоте 150 мм. Ячейки пронумерованы
+  наклейками в углах: слева направо, сверху вниз, начиная с 1.
+real_analog: "самодельная рама из ПВХ-труб с ячейками"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ-труба"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "белый #FFFFFF, номера ячеек чёрные на жёлтом"
+difficulty: 3          # 1–5
+notes: >-
+  Упражнение на точность: тренер или симулятор называет номер ячейки. Перекладины между
+  ячейками жёсткие.
 
 variants:
   - id: G13-a
     label: "2×2"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 560, height: 710, depth: 250, tube: 20, cells: 4 }
+    aperture_mm: { shape: "grid", cell_width: 250, cell_height: 250, cells: 4, bottom: 170 }
     drawing: drawings/G13-a.svg
   - id: G13-b
     label: "3×3 (tic-tac-toe)"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 4
+    dimensions_mm: { width: 830, height: 980, depth: 250, tube: 20, cells: 9 }
+    aperture_mm: { shape: "grid", cell_width: 250, cell_height: 250, cells: 9, bottom: 170 }
     drawing: drawings/G13-b.svg

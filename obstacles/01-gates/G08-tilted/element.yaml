@@ -5,26 +5,34 @@ name_ru: "Наклонные ворота"
 name_en: "Tilted gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратные тканевые ворота 500×500 (как G03-c), закреплённые нижней стороной на шарнирной
+  раме 500×300 мм. Верх ворот отклонён назад, от подлетающего дрона, на заданный угол, сзади
+  — упор-распорка.
+real_analog: "тканевые ворота на раме с регулируемым наклоном"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; рама — алюминиевый профиль"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "фиолетовый #8E24AA"
+difficulty: 2          # 1–5
+notes: >-
+  Наклон — поворот вокруг оси X (верх уходит назад). При горизонтальном пролёте видимая
+  высота проёма = 400·cos(угол) — поле effective_height. Вариант с боковым наклоном (крен)
+  можно добавить позже.
 
 variants:
   - id: G08-a
     label: "наклон 30°"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 2
+    dimensions_mm: { width: 500, height: 433, depth: 300, tilt_deg: 30 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, effective_height: 346, bottom: 43 }
     drawing: drawings/G08-a.svg
   - id: G08-b
     label: "наклон 45°"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 500, height: 354, depth: 354, tilt_deg: 45 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, effective_height: 283, bottom: 35 }
     drawing: drawings/G08-b.svg

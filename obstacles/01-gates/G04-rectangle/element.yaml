@@ -5,26 +5,30 @@ name_ru: "Прямоугольные ворота"
 name_en: "Rectangular gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Та же конструкция, что у G03 (проволока в тканевом чехле, лента 50 мм, две лапки), но
+  вытянутая. Широкие ворота ограничивают пролёт по высоте, высокие — по горизонтали.
+real_analog: "складные тканевые прямоугольные ворота"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь, светоотражающая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "жёлтый #FFC400, окантовка проёма чёрная"
+difficulty: 3          # 1–5
+notes: >-
+  Тренируют точность по одной оси: широкие — контроль высоты, высокие — контроль бокового
+  смещения.
 
 variants:
   - id: G04-a
     label: "широкие 600×300"
-    dimensions_mm: { width: 600, height: 300 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 600, height: 300, depth: 200, band: 50 }
+    aperture_mm: { shape: "rect", width: 500, height: 200, bottom: 50 }
     drawing: drawings/G04-a.svg
   - id: G04-b
     label: "высокие 300×600"
-    dimensions_mm: { width: 300, height: 600 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 300, height: 600, depth: 200, band: 50 }
+    aperture_mm: { shape: "rect", width: 200, height: 500, bottom: 50 }
     drawing: drawings/G04-b.svg

@@ -5,21 +5,25 @@ name_ru: "Горизонтальное кольцо (dive gate)"
 name_en: "Dive gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевое кольцо Ø500 (лента 50 мм), лежащее горизонтально на трёх вертикальных ножках из
+  трубки Ø16 мм высотой 800 мм. Ножки крепятся к внешнему краю кольца через 120°.
+real_analog: "горизонтальные ворота на ножках для нырка"
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; ножки — алюминий"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "оранжевый #FF6A00, ножки серые"
+difficulty: 3          # 1–5
+notes: >-
+  Проходится сверху вниз: дрон набирает высоту, переворачивается или резко пикирует в кольцо
+  и выходит под ним. Ножки стоят вне проёма, но мешают выходу вбок.
 
 variants:
   - id: G10-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 500, height: 800, depth: 500, diameter: 500, band: 50 }
+    aperture_mm: { shape: "circle", plane: "horizontal", diameter: 400, height: 800 }
     drawing: drawings/G10-a.svg

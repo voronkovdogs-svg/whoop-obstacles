@@ -5,31 +5,39 @@ name_ru: "Ворота на стойке"
 name_en: "Gate on stand"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратные тканевые ворота 500×500 (лента 50 мм) на вертикальной стойке: алюминиевая труба
+  Ø20 мм, крестовина-основание 400×400 мм. Ворота крепятся к стойке хомутами за боковую
+  сторону, стойка стоит сбоку от проёма.
+real_analog: "тканевые ворота на телескопической стойке"
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; стойка — алюминий"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "красный #D32F2F, стойка чёрная"
+difficulty: 2          # 1–5
+notes: >-
+  Стойка жёсткая (hard), ворота — semi. Высокие ворота хорошо сочетать с низкими для
+  перепадов высоты на трассе.
 
 variants:
   - id: G09-a
-    label: "низкие (на полу)"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "низкие (нижний край 100 мм)"
+    difficulty: 1
+    dimensions_mm: { width: 500, height: 600, depth: 400, lower_edge: 100 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 150 }
     drawing: drawings/G09-a.svg
   - id: G09-b
-    label: "средние"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "средние (нижний край 500 мм)"
+    difficulty: 2
+    dimensions_mm: { width: 500, height: 1000, depth: 400, lower_edge: 500 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 550 }
     drawing: drawings/G09-b.svg
   - id: G09-c
-    label: "высокие"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "высокие (нижний край 1000 мм)"
+    difficulty: 2
+    dimensions_mm: { width: 500, height: 1500, depth: 400, lower_edge: 1000 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 1050 }
     drawing: drawings/G09-c.svg

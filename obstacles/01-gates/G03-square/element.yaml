@@ -5,31 +5,40 @@ name_ru: "Квадратные ворота"
 name_en: "Square gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратная рамка из пружинной стальной проволоки в тканевом чехле-ленте, углы слегка
+  скруглены (R 20 мм). Стоит на полу нижней стороной, устойчивость дают две Г-образные
+  проволочные лапки глубиной 200 мм (по 100 мм вперёд и назад). По краю проёма —
+  светоотражающая окантовка 5 мм.
+real_analog: "складные тканевые квадратные ворота для вупов"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь, светоотражающая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "синий #1E63D6, окантовка проёма белая светоотражающая"
+difficulty: 2          # 1–5
+notes: >-
+  Подпись варианта — внешний размер. Вариант 500×500 по проёму (400×400) близок к типовым
+  магазинным воротам для вупов.
 
 variants:
   - id: G03-a
     label: "300×300"
-    dimensions_mm: { width: 300, height: 300 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 4
+    dimensions_mm: { width: 300, height: 300, depth: 200, band: 40 }
+    aperture_mm: { shape: "rect", width: 220, height: 220, bottom: 40 }
     drawing: drawings/G03-a.svg
   - id: G03-b
     label: "400×400"
-    dimensions_mm: { width: 400, height: 400 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 2
+    dimensions_mm: { width: 400, height: 400, depth: 200, band: 50 }
+    aperture_mm: { shape: "rect", width: 300, height: 300, bottom: 50 }
     drawing: drawings/G03-b.svg
   - id: G03-c
     label: "500×500"
-    dimensions_mm: { width: 500, height: 500 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 1
+    dimensions_mm: { width: 500, height: 500, depth: 200, band: 50 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 50 }
     drawing: drawings/G03-c.svg

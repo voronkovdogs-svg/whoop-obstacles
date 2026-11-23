@@ -5,21 +5,25 @@ name_ru: "Ворота-рамка с баннером"
 name_en: "Banner frame gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Прямоугольная рамка из стеклопластиковых прутков, на которую натянут тканевый
+  баннер-чехол: сверху полоса 120 мм (место под номер ворот), по бокам по 50 мм, снизу
+  планка 30 мм на полу. Стоит на двух плоских Т-образных ножках глубиной 300 мм.
+real_analog: "уменьшенная копия гоночных ворот с баннером"
+mount: floor           # floor | stand | hanging | wall | free
+material: "стеклопластик, полиэстер"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "баннер белый #FFFFFF с чёрным номером, рамка чёрная"
+difficulty: 1          # 1–5
+notes: >-
+  Удобно ставить старт/финиш и ключевые ворота трассы: номер на верхней полосе.
 
 variants:
   - id: G16-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 700, height: 600, depth: 300 }
+    aperture_mm: { shape: "rect", width: 600, height: 450, bottom: 30 }
     drawing: drawings/G16-a.svg

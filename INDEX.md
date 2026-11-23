@@ -2,27 +2,27 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 85
+Элементов: **85**, вариантов: **112**. draft: 68, filled: 17
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
-| [G01](obstacles/01-gates/G01-ring/element.yaml) | Круглое кольцо | gates | track | static | 3 | 0/3 | draft |
-| [G02](obstacles/01-gates/G02-hula-hoop/element.yaml) | Обруч хула-хуп | gates | track | static | 2 | 0/2 | draft |
-| [G03](obstacles/01-gates/G03-square/element.yaml) | Квадратные ворота | gates | track | static | 3 | 0/3 | draft |
-| [G04](obstacles/01-gates/G04-rectangle/element.yaml) | Прямоугольные ворота | gates | track | static | 2 | 0/2 | draft |
-| [G05](obstacles/01-gates/G05-triangle/element.yaml) | Треугольные ворота | gates | track | static | 1 | 0/1 | draft |
-| [G06](obstacles/01-gates/G06-polygon/element.yaml) | Многоугольные ворота | gates | track | static | 2 | 0/2 | draft |
-| [G07](obstacles/01-gates/G07-noodle-arch/element.yaml) | Арка из pool noodle | gates | track | static | 1 | 0/1 | draft |
-| [G08](obstacles/01-gates/G08-tilted/element.yaml) | Наклонные ворота | gates | track | static | 2 | 0/2 | draft |
-| [G09](obstacles/01-gates/G09-on-stand/element.yaml) | Ворота на стойке | gates | track | static | 3 | 0/3 | draft |
-| [G10](obstacles/01-gates/G10-dive-gate/element.yaml) | Горизонтальное кольцо (dive gate) | gates | track | static | 1 | 0/1 | draft |
-| [G11](obstacles/01-gates/G11-hanging-ring/element.yaml) | Подвешенное кольцо | gates | track | static | 1 | 0/1 | draft |
-| [G12](obstacles/01-gates/G12-figure-eight/element.yaml) | Восьмёрка из двух колец | gates | track | static | 1 | 0/1 | draft |
-| [G13](obstacles/01-gates/G13-grid/element.yaml) | Сетка ворот | gates | track | static | 2 | 0/2 | draft |
-| [G14](obstacles/01-gates/G14-keyhole/element.yaml) | Замочная скважина | gates | track | static | 1 | 0/1 | draft |
-| [G15](obstacles/01-gates/G15-led/element.yaml) | Светодиодные ворота | gates | track | static | 2 | 0/2 | draft |
-| [G16](obstacles/01-gates/G16-banner-frame/element.yaml) | Ворота-рамка с баннером | gates | track | static | 1 | 0/1 | draft |
-| [G17](obstacles/01-gates/G17-flag-posts/element.yaml) | Флаговые ворота (две стойки) | gates | track | static | 1 | 0/1 | draft |
+| [G01](obstacles/01-gates/G01-ring/element.yaml) | Круглое кольцо | gates | track | static | 3 | 0/3 | filled |
+| [G02](obstacles/01-gates/G02-hula-hoop/element.yaml) | Обруч хула-хуп | gates | track | static | 2 | 0/2 | filled |
+| [G03](obstacles/01-gates/G03-square/element.yaml) | Квадратные ворота | gates | track | static | 3 | 0/3 | filled |
+| [G04](obstacles/01-gates/G04-rectangle/element.yaml) | Прямоугольные ворота | gates | track | static | 2 | 0/2 | filled |
+| [G05](obstacles/01-gates/G05-triangle/element.yaml) | Треугольные ворота | gates | track | static | 1 | 0/1 | filled |
+| [G06](obstacles/01-gates/G06-polygon/element.yaml) | Многоугольные ворота | gates | track | static | 2 | 0/2 | filled |
+| [G07](obstacles/01-gates/G07-noodle-arch/element.yaml) | Арка из pool noodle | gates | track | static | 1 | 0/1 | filled |
+| [G08](obstacles/01-gates/G08-tilted/element.yaml) | Наклонные ворота | gates | track | static | 2 | 0/2 | filled |
+| [G09](obstacles/01-gates/G09-on-stand/element.yaml) | Ворота на стойке | gates | track | static | 3 | 0/3 | filled |
+| [G10](obstacles/01-gates/G10-dive-gate/element.yaml) | Горизонтальное кольцо (dive gate) | gates | track | static | 1 | 0/1 | filled |
+| [G11](obstacles/01-gates/G11-hanging-ring/element.yaml) | Подвешенное кольцо | gates | track | static | 1 | 0/1 | filled |
+| [G12](obstacles/01-gates/G12-figure-eight/element.yaml) | Восьмёрка из двух колец | gates | track | static | 1 | 0/1 | filled |
+| [G13](obstacles/01-gates/G13-grid/element.yaml) | Сетка ворот | gates | track | static | 2 | 0/2 | filled |
+| [G14](obstacles/01-gates/G14-keyhole/element.yaml) | Замочная скважина | gates | track | static | 1 | 0/1 | filled |
+| [G15](obstacles/01-gates/G15-led/element.yaml) | Светодиодные ворота | gates | track | static | 2 | 0/2 | filled |
+| [G16](obstacles/01-gates/G16-banner-frame/element.yaml) | Ворота-рамка с баннером | gates | track | static | 1 | 0/1 | filled |
+| [G17](obstacles/01-gates/G17-flag-posts/element.yaml) | Флаговые ворота (две стойки) | gates | track | static | 1 | 0/1 | filled |
 | [T01](obstacles/02-tunnels/T01-fabric-straight/element.yaml) | Прямой тканевый тоннель | tunnels | track | static | 2 | 0/2 | draft |
 | [T02](obstacles/02-tunnels/T02-curved-90/element.yaml) | Изогнутый тоннель 90° | tunnels | track | static | 1 | 0/1 | draft |
 | [T03](obstacles/02-tunnels/T03-accordion/element.yaml) | Тоннель-гармошка | tunnels | track | static | 1 | 0/1 | draft |

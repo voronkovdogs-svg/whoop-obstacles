@@ -5,21 +5,25 @@ name_ru: "Восьмёрка из двух колец"
 name_en: "Figure-eight gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Два тканевых кольца Ø400 (лента 50 мм) в одной плоскости, касаются друг друга в центре и
+  скреплены. Стоят на общей подставке 400×100×20 мм, нижние точки колец на высоте 20 мм.
+real_analog: "двойные тканевые ворота"
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; подставка — пластик"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "левое кольцо синее #1E88E5, правое красное #E53935"
+difficulty: 2          # 1–5
+notes: >-
+  Пролёт в одно кольцо и возврат через другое после разворота — классическая «восьмёрка».
+  Разные цвета позволяют тренеру называть кольцо.
 
 variants:
   - id: G12-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 800, height: 420, depth: 100, ring_diameter: 400, band: 50 }
+    aperture_mm: { shape: "2×circle", diameter: 300, centers_x: "-200, +200", bottom: 70 }
     drawing: drawings/G12-a.svg

@@ -5,26 +5,30 @@ name_ru: "Многоугольные ворота"
 name_en: "Polygon gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Жёсткая рамка из печатных сегментов профиля 40×15 мм, стоит плоской стороной на полу, две
+  опоры-лапки глубиной 200 мм. В профиле есть канавка под светодиодную ленту.
+real_analog: "3D-печатные шестиугольные/восьмиугольные ворота для вупов"
+mount: floor           # floor | stand | hanging | wall | free
+material: "PETG (3D-печать)"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "белый #F5F5F5; опционально подсветка по канавке"
+difficulty: 2          # 1–5
+notes: >-
+  Размер 400 — расстояние между параллельными сторонами (под ключ). Шестиугольник стоит
+  гранью вниз, поэтому по ширине он больше, чем по высоте.
 
 variants:
   - id: G06-a
     label: "шестиугольник"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 462, height: 400, depth: 200, across_flats: 400, band: 40 }
+    aperture_mm: { shape: "hexagon", across_flats: 320, across_corners: 370, bottom: 40 }
     drawing: drawings/G06-a.svg
   - id: G06-b
     label: "восьмиугольник"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 400, height: 400, depth: 200, across_flats: 400, band: 40 }
+    aperture_mm: { shape: "octagon", across_flats: 320, across_corners: 346, bottom: 40 }
     drawing: drawings/G06-b.svg

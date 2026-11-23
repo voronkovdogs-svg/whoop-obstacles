@@ -5,21 +5,25 @@ name_ru: "Подвешенное кольцо"
 name_en: "Hanging ring"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевое кольцо Ø400 (лента 50 мм), подвешенное к потолку на двух нейлоновых шнурах Ø2 мм,
+  закреплённых в точках «10 и 14 часов». Нижний край кольца на высоте 1000 мм.
+real_analog: "тканевые ворота, подвешенные на крючки к потолку"
+mount: hanging         # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь, нейлоновый шнур"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "жёлтый #FFC400"
+difficulty: 2          # 1–5
+notes: >-
+  В статике кольцо неподвижно. При ударе на практике раскачивается — динамическая версия в
+  D04. Длина шнуров зависит от высоты потолка; по умолчанию потолок 2500 мм.
 
 variants:
   - id: G11-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 400, height: 400, depth: 10, diameter: 400, band: 50, lower_edge: 1000 }
+    aperture_mm: { shape: "circle", diameter: 300, bottom: 1050 }
     drawing: drawings/G11-a.svg

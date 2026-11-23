@@ -5,26 +5,31 @@ name_ru: "Светодиодные ворота"
 name_en: "LED gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Рамка из матовой полупрозрачной трубки Ø30 мм, внутри — адресная светодиодная лента по
+  всему периметру. Сверху блок питания и контроллер 60×30×20 мм. По умолчанию подвешивается
+  за верхнюю сторону, нижний край на высоте 800 мм; может крепиться клипсой к мебели.
+real_analog: "светодиодные ворота для микро-гонок"
+mount: hanging         # floor | stand | hanging | wall | free
+material: "поликарбонат, светодиодная лента"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "светящаяся RGB-рамка; по умолчанию циан #00E5FF"
+difficulty: 2          # 1–5
+notes: >-
+  В симуляторе материал рамки — светящийся (emissive), цвет и анимация настраиваются. Хорошо
+  видны в тёмном помещении.
 
 variants:
   - id: G15-a
     label: "кольцо"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 420, height: 420, depth: 30, diameter: 420, tube: 30, lower_edge: 800 }
+    aperture_mm: { shape: "circle", diameter: 360, bottom: 830 }
     drawing: drawings/G15-a.svg
   - id: G15-b
     label: "квадрат"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 420, height: 420, depth: 30, tube: 30, lower_edge: 800 }
+    aperture_mm: { shape: "rect", width: 360, height: 360, bottom: 830 }
     drawing: drawings/G15-b.svg

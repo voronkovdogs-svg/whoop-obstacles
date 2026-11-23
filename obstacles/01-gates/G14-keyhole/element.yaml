@@ -5,21 +5,27 @@ name_ru: "Замочная скважина"
 name_en: "Keyhole gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Вертикальная панель из пенокартона 600×700×5 мм с вырезом в форме замочной скважины: круг
+  Ø300 мм с центром на высоте 450 мм от низа панели и под ним щель шириной 150 мм, идущая
+  вниз до высоты 100 мм. Панель стоит на полу, сзади две треугольные подпорки глубиной 250
+  мм. Край выреза обклеен контрастной лентой.
+real_analog: "панель с фигурным вырезом"
+mount: floor           # floor | stand | hanging | wall | free
+material: "пенокартон, клейкая лента"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "панель синяя #1565C0, кант выреза жёлтый #FFD600"
+difficulty: 3          # 1–5
+notes: >-
+  Два пути: большой круг (проще) или узкая щель снизу (сложнее, нужна точность по
+  горизонтали).
 
 variants:
   - id: G14-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 600, height: 700, depth: 250, thickness: 5 }
+    aperture_mm: { shape: "keyhole", circle_diameter: 300, circle_center_y: 450, slot_width: 150, slot_bottom: 100, slot_top: 300 }
     drawing: drawings/G14-a.svg

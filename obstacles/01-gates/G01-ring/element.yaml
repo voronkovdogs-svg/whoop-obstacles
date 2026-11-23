@@ -5,31 +5,40 @@ name_ru: "Круглое кольцо"
 name_en: "Ring gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Кольцо из пружинной стальной проволоки в тканевом чехле-ленте. Лента плоская, лежит в
+  плоскости кольца, толщина около 8 мм. Кольцо стоит вертикально в утяжелённой
+  подставке-зажиме 160×100×25 мм, нижняя точка кольца на высоте 20 мм над полом. Плоскость
+  кольца перпендикулярна направлению пролёта.
+real_analog: "складные тканевые ворота для вупов (pop-up gate)"
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; подставка — пластик с утяжелителем"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "оранжевый #FF6A00"
+difficulty: 2          # 1–5
+notes: >-
+  Подпись варианта — внешний диаметр. Проём = внешний диаметр минус две ширины ленты. При
+  ударе кольцо прогибается и пружинит, дрон обычно отскакивает, а не застревает.
 
 variants:
   - id: G01-a
     label: "Ø300"
-    dimensions_mm: { diameter: 300 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 4
+    dimensions_mm: { width: 300, height: 320, depth: 100, diameter: 300, band: 40 }
+    aperture_mm: { shape: "circle", diameter: 220, bottom: 60 }
     drawing: drawings/G01-a.svg
   - id: G01-b
     label: "Ø400"
-    dimensions_mm: { diameter: 400 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 2
+    dimensions_mm: { width: 400, height: 420, depth: 100, diameter: 400, band: 50 }
+    aperture_mm: { shape: "circle", diameter: 300, bottom: 70 }
     drawing: drawings/G01-b.svg
   - id: G01-c
     label: "Ø500"
-    dimensions_mm: { diameter: 500 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 1
+    dimensions_mm: { width: 500, height: 520, depth: 100, diameter: 500, band: 50 }
+    aperture_mm: { shape: "circle", diameter: 400, bottom: 70 }
     drawing: drawings/G01-c.svg

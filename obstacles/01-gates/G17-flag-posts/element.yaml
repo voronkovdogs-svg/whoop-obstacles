@@ -5,21 +5,26 @@ name_ru: "Флаговые ворота (две стойки)"
 name_en: "Flag post gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Два вертикальных стеклопластиковых прутка Ø10 мм высотой 1000 мм на круглых утяжелённых
+  основаниях Ø150 мм, между осями 600 мм. На верхушке каждого — флажок 200×150 мм,
+  направленный наружу. Перекладины нет.
+real_analog: "разметочные шесты с флажками"
+mount: floor           # floor | stand | hanging | wall | free
+material: "стеклопластик, ткань, резиновое основание"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "шесты белые, флажки в красно-белую клетку"
+difficulty: 1          # 1–5
+notes: >-
+  Пролёт между стойками на любой высоте ниже флажков. Шесты гибкие: при касании качаются и
+  возвращаются.
 
 variants:
   - id: G17-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 750, height: 1000, depth: 150, pole: 10, spacing: 600 }
+    aperture_mm: { shape: "posts", width: 590, height: 1000, bottom: 0 }
     drawing: drawings/G17-a.svg

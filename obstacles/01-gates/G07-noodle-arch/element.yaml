@@ -5,21 +5,26 @@ name_ru: "Арка из pool noodle"
 name_en: "Pool noodle arch"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Плавательная «лапша» Ø65 мм длиной 1600 мм, согнутая аркой: две вертикальные ножки по 330
+  мм и полукруг радиусом 300 мм по осевой. Концы вставлены в стаканы на плоских опорах
+  150×150×10 мм.
+real_analog: "пенополиэтиленовая палка для плавания (pool noodle)"
+mount: floor           # floor | stand | hanging | wall | free
+material: "вспененный полиэтилен"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "салатовый #7CD82E"
+difficulty: 1          # 1–5
+notes: >-
+  Самое мягкое препятствие: при касании дрон почти не теряет скорость. Удобно для тренировок
+  «впритирку».
 
 variants:
   - id: G07-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 665, height: 663, depth: 150, tube: 65, span_axis: 600 }
+    aperture_mm: { shape: "arch", width: 535, height: 597, bottom: 0 }
     drawing: drawings/G07-a.svg

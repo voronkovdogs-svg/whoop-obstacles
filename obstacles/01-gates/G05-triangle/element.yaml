@@ -5,21 +5,25 @@ name_ru: "Треугольные ворота"
 name_en: "Triangle gate"
 category: gates
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Равносторонний треугольник вершиной вверх, проволока в тканевом чехле (лента 40 мм). Стоит
+  нижней стороной на полу, две лапки глубиной 200 мм.
+real_analog: "тканевые ворота нестандартной формы"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "красный #E53935"
+difficulty: 3          # 1–5
+notes: >-
+  Проём сужается кверху: безопасно проходить в нижней трети. Самая широкая часть — у
+  основания.
 
 variants:
   - id: G05-a
-    label: "сторона 400"
-    dimensions_mm: { side: 400 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "сторона 500"
+    dimensions_mm: { width: 500, height: 433, depth: 200, side: 500, band: 40 }
+    aperture_mm: { shape: "triangle", inner_side: 361, incircle_diameter: 209, bottom: 40 }
     drawing: drawings/G05-a.svg
