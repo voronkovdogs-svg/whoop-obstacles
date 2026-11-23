@@ -25,6 +25,6 @@ notes: >-
 variants:
   - id: G17-a
     label: "std"
-    dimensions_mm: { width: 750, height: 1000, depth: 150, pole: 10, spacing: 600 }
+    dimensions_mm: { width: 1010, height: 1000, depth: 150, pole: 10, spacing: 600, flag: "200×150" }
     aperture_mm: { shape: "posts", width: 590, height: 1000, bottom: 0 }
     drawing: drawings/G17-a.svg

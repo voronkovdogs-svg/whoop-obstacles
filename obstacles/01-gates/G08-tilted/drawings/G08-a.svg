@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720">
+
+<style>
+  .dim{stroke:#555;stroke-width:0.9;fill:none;marker-start:url(#ar);marker-end:url(#ar)}
+  .dim.in{stroke:#0057B8}
+  .ext{stroke:#888;stroke-width:0.6}
+  .dt{font-size:12px;fill:#333;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+  .dt.in{fill:#0057B8}
+  .fl{stroke:#2E7D32;stroke-width:2;marker-end:url(#fa)}
+  .ft{font-size:11px;fill:#2E7D32;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px}
+  .incircle{fill:none;stroke:#0057B8;stroke-width:0.8;stroke-dasharray:4 3}
+  text{font-family:Arial,Helvetica,sans-serif}
+</style>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7"
+          orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#555"/></marker>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+
+<rect width="1000" height="720" fill="#fff"/>
+<rect x="10" y="10" width="980" height="700" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="30" y="46" font-size="22" font-weight="bold" fill="#222">G08-a · Наклонные ворота</text>
+<text x="30" y="72" font-size="14" fill="#555">Вариант: наклон 30°  ·  Tilted gate  ·  размеры в мм  ·  1 px ≈ 1.6 мм</text>
+<line x1="660" y1="90" x2="660" y2="670" stroke="#ddd"/>
+<text x="40" y="104" font-size="13" fill="#888">Вид спереди</text>
+<text x="680" y="104" font-size="13" fill="#888">Вид сбоку</text>
+<line x1="38" y1="517.1" x2="642" y2="517.1" stroke="#888" stroke-width="1.5"/>
+<line x1="38" y1="518.1" x2="31" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="50" y1="518.1" x2="43" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="62" y1="518.1" x2="55" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="74" y1="518.1" x2="67" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="86" y1="518.1" x2="79" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="98" y1="518.1" x2="91" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="110" y1="518.1" x2="103" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="122" y1="518.1" x2="115" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="134" y1="518.1" x2="127" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="146" y1="518.1" x2="139" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="158" y1="518.1" x2="151" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="170" y1="518.1" x2="163" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="182" y1="518.1" x2="175" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="194" y1="518.1" x2="187" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="206" y1="518.1" x2="199" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="218" y1="518.1" x2="211" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="230" y1="518.1" x2="223" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="242" y1="518.1" x2="235" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="254" y1="518.1" x2="247" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="266" y1="518.1" x2="259" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="278" y1="518.1" x2="271" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="290" y1="518.1" x2="283" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="302" y1="518.1" x2="295" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="314" y1="518.1" x2="307" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="326" y1="518.1" x2="319" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="338" y1="518.1" x2="331" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="350" y1="518.1" x2="343" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="362" y1="518.1" x2="355" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="374" y1="518.1" x2="367" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="386" y1="518.1" x2="379" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="398" y1="518.1" x2="391" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="410" y1="518.1" x2="403" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="422" y1="518.1" x2="415" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="434" y1="518.1" x2="427" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="446" y1="518.1" x2="439" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="458" y1="518.1" x2="451" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="470" y1="518.1" x2="463" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="482" y1="518.1" x2="475" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="494" y1="518.1" x2="487" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="506" y1="518.1" x2="499" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="518" y1="518.1" x2="511" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="530" y1="518.1" x2="523" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="542" y1="518.1" x2="535" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="554" y1="518.1" x2="547" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="566" y1="518.1" x2="559" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="578" y1="518.1" x2="571" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="590" y1="518.1" x2="583" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="602" y1="518.1" x2="595" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="614" y1="518.1" x2="607" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="626" y1="518.1" x2="619" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="638" y1="518.1" x2="631" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<path d="M181.7,517.1 L498.3,517.1 L498.3,242.9 L181.7,242.9 Z M213.3,489.9 L466.7,489.9 L466.7,270.8 L213.3,270.8 Z" fill="#8E24AA" fill-rule="evenodd" stroke="#222" stroke-width="1.2"/>
+<line x1="181.7" y1="239.9" x2="181.7" y2="217.9" class="ext"/>
+<line x1="498.3" y1="239.9" x2="498.3" y2="217.9" class="ext"/>
+<line x1="181.7" y1="220.9" x2="498.3" y2="220.9" class="dim"/>
+<text x="340.0" y="216.9" class="dt">500</text>
+<line x1="501.3" y1="517.1" x2="529.3" y2="517.1" class="ext"/>
+<line x1="501.3" y1="242.9" x2="529.3" y2="242.9" class="ext"/>
+<line x1="526.3" y1="517.1" x2="526.3" y2="242.9" class="dim"/>
+<text x="531.3" y="380.0" class="dt" transform="rotate(-90 531.3 380.0)" dy="10">433</text>
+<line x1="289.3" y1="489.9" x2="289.3" y2="270.8" class="dim in"/>
+<text x="284.3" y="380.3" class="dt in" transform="rotate(-90 284.3 380.3)">346 видимый</text>
+<line x1="213.3" y1="358.4" x2="466.7" y2="358.4" class="dim in"/>
+<text x="340.0" y="353.4" class="dt in" dy="0">400</text>
+<line x1="678" y1="517.1" x2="962" y2="517.1" stroke="#888" stroke-width="1.5"/>
+<line x1="678" y1="518.1" x2="671" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="690" y1="518.1" x2="683" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="702" y1="518.1" x2="695" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="714" y1="518.1" x2="707" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="726" y1="518.1" x2="719" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="738" y1="518.1" x2="731" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="750" y1="518.1" x2="743" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="762" y1="518.1" x2="755" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="774" y1="518.1" x2="767" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="786" y1="518.1" x2="779" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="798" y1="518.1" x2="791" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="810" y1="518.1" x2="803" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="822" y1="518.1" x2="815" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="834" y1="518.1" x2="827" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="846" y1="518.1" x2="839" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="858" y1="518.1" x2="851" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="870" y1="518.1" x2="863" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="882" y1="518.1" x2="875" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="894" y1="518.1" x2="887" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="906" y1="518.1" x2="899" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="918" y1="518.1" x2="911" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="930" y1="518.1" x2="923" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="942" y1="518.1" x2="935" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<line x1="954" y1="518.1" x2="947" y2="525.1" stroke="#888" stroke-width="0.8"/>
+<rect x="725.0" y="507.6" width="190.0" height="9.5" fill="#9e9e9e" stroke="#222" stroke-width="1.2" />
+<line x1="915.0" y1="507.6" x2="804.2" y2="380.0" stroke="#777" stroke-width="3" />
+<line x1="725.0" y1="517.1" x2="883.3" y2="242.9" stroke="#222" stroke-width="7.1"/>
+<line x1="725.0" y1="517.1" x2="883.3" y2="242.9" stroke="#8E24AA" stroke-width="5.1"/>
+<line x1="725.0" y1="517.1" x2="725.0" y2="390.5" stroke="#555" stroke-width="0.8" stroke-dasharray="4 3"/>
+<path d="M725.0,415.8 A101.3,101.3 0 0,1 775.7,429.4" fill="none" class="dim"/>
+<text x="765.5" y="410.7" font-size="13" text-anchor="middle" fill="#555" >30°</text>
+<line x1="725.0" y1="520.1" x2="725.0" y2="550.1" class="ext"/>
+<line x1="915.0" y1="520.1" x2="915.0" y2="550.1" class="ext"/>
+<line x1="725.0" y1="547.1" x2="915.0" y2="547.1" class="dim"/>
+<text x="820.0" y="543.1" class="dt">300</text>
+<line x1="918.0" y1="517.1" x2="946.0" y2="517.1" class="ext"/>
+<line x1="918.0" y1="242.9" x2="946.0" y2="242.9" class="ext"/>
+<line x1="943.0" y1="517.1" x2="943.0" y2="242.9" class="dim"/>
+<text x="948.0" y="380.0" class="dt" transform="rotate(-90 948.0 380.0)" dy="10">433</text>
+<line x1="669.0" y1="380.0" x2="711.0" y2="380.0" class="fl"/>
+<text x="690.0" y="374.0" class="ft">пролёт</text>
+<line x1="10" y1="678" x2="990" y2="678" stroke="#333"/>
+<text x="30" y="700" font-size="12" fill="#444">Материал: полиэстер, пружинная сталь; рама — алюминиевый профиль  ·  Жёсткость: semi  ·  Крепление: floor  ·  Сложность: 2/5</text>
+</svg>
