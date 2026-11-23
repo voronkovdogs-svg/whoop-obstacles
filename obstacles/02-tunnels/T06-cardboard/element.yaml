@@ -5,21 +5,26 @@ name_ru: "Картонный тоннель-коробка"
 name_en: "Cardboard tunnel"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Три гофрокартонные коробки 400×400×500 мм без торцевых клапанов, состыкованы торцами и
+  проклеены скотчем по швам. Получается квадратный тоннель длиной 1500 мм с непрозрачными
+  стенками.
+real_analog: "картонные коробки от бытовой техники"
+mount: floor           # floor | stand | hanging | wall | free
+material: "гофрокартон 5 мм, упаковочный скотч"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "крафт-коричневый #C49A6C, скотч #D7B98E"
+difficulty: 2          # 1–5
+notes: >-
+  Типичное домашнее препятствие. Внутри темнее, чем в тканевом тоннеле. Лёгкий: от сильного
+  удара может сдвинуться.
 
 variants:
   - id: T06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (3 коробки)"
+    dimensions_mm: { width: 400, height: 400, depth: 1500, boxes: 3, box_length: 500, wall: 5 }
+    aperture_mm: { shape: "rect", width: 390, height: 390, length: 1500, bottom: 5 }
     drawing: drawings/T06-a.svg

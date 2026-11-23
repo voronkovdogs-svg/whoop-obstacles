@@ -5,21 +5,26 @@ name_ru: "Тоннель-развилка"
 name_en: "Y-fork tunnel"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Входной тканевый рукав Ø450 длиной 800 мм, после которого тоннель раздваивается на две
+  ветви по 800 мм, расходящиеся на 30° влево и вправо. Ветви сшиты общей тканевой муфтой,
+  между ними — перегородка. Лежит на полу.
+real_analog: "разветвлённый детский игровой тоннель"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "вход синий #1E88E5, левая ветвь красная #E53935, правая зелёная #43A047"
+difficulty: 3          # 1–5
+notes: >-
+  Тренер или симулятор называет ветвь по цвету. Прямо по курсу на развилке — перегородка: в
+  неё легко влететь, если не выбрать сторону заранее.
 
 variants:
   - id: T08-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (ветви по 30°)"
+    dimensions_mm: { width: 1190, height: 450, depth: 1605, diameter: 450, trunk_length: 800, branch_length: 800, branch_angle: 30 }
+    aperture_mm: { shape: "circle", diameter: 440, bottom: 5, exits: 2 }
     drawing: drawings/T08-a.svg

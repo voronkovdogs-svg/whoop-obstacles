@@ -5,21 +5,26 @@ name_ru: "Тоннель с боковыми окнами"
 name_en: "Tunnel with side windows"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевый тоннель Ø450 длиной 1800 мм (как T01). В боковых стенках по два круглых окна Ø250
+  мм — слева и справа, центры на 600 и 1200 мм от входа на высоте оси (225 мм). Края окон
+  обшиты эластичной окантовкой.
+real_analog: "игровой тоннель с окнами"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "синий #1E88E5, окантовка окон белая #FFFFFF"
+difficulty: 3          # 1–5
+notes: >-
+  Два способа прохождения: насквозь (сложность 2) или с выходом через боковое окно
+  (сложность 4–5: резкий поворот внутри узкого тоннеля). Окна дают свет внутрь.
 
 variants:
   - id: T09-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (1,8 м, 4 окна)"
+    dimensions_mm: { width: 450, height: 450, depth: 1800, diameter: 450, wire_pitch: 150, windows: 4 }
+    aperture_mm: { shape: "circle", diameter: 440, length: 1800, bottom: 5, window_diameter: 250, window_centers_z: "600, 1200", window_center_y: 225 }
     drawing: drawings/T09-a.svg

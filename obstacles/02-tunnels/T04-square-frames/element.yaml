@@ -5,21 +5,26 @@ name_ru: "Квадратный тоннель из рамок"
 name_en: "Square frame tunnel"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Четыре П-образные рамки из ПВХ-трубы 20 мм (500×500 снаружи) с шагом 500 мм, сверху и по
+  бокам обтянуты непрозрачной тканью. Пола нет — тоннель стоит на полу открытым низом.
+  Входная и выходная рамки обмотаны жёлтой лентой.
+real_analog: "самодельный тоннель из ПВХ-рамок и ткани"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ-труба, полиэстер"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ткань тёмно-серая #424242, рамки входа и выхода жёлтые #FFD600"
+difficulty: 2          # 1–5
+notes: >-
+  Ткань мягкая, рамки жёсткие. Прямые стенки и плоский пол хорошо помогают оценивать высоту.
+  Длину можно наращивать рамками по 500 мм.
 
 variants:
   - id: T04-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (4 рамки, 1,5 м)"
+    dimensions_mm: { width: 500, height: 500, depth: 1520, frame: 20, frame_step: 500, frames: 4 }
+    aperture_mm: { shape: "rect", width: 460, height: 480, length: 1520, bottom: 0 }
     drawing: drawings/T04-a.svg

@@ -5,26 +5,34 @@ name_ru: "Прямой тканевый тоннель"
 name_en: "Straight fabric tunnel"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Детский игровой тоннель: спираль из пружинной стальной проволоки с шагом 150 мм, обтянутая
+  плотной полиэстеровой тканью. Лежит на полу, оба торца открыты, края торцов окантованы
+  контрастной лентой. В реальности сечение слегка проседает под своим весом, в симуляторе
+  считаем его круглым.
+real_analog: "детский складной игровой тоннель"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "синий #1E88E5, окантовка торцов жёлтая #FFC400"
+difficulty: 2          # 1–5
+notes: >-
+  Внутри темно: камера вупа подстраивает экспозицию, на выходе возможна засветка. Чтобы
+  тоннель не катался, по бокам кладут мешочки-утяжелители.
 
 variants:
   - id: T01-a
     label: "1,5 м"
-    dimensions_mm: { diameter: 450, length: 1500 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 2
+    dimensions_mm: { width: 450, height: 450, depth: 1500, diameter: 450, wire_pitch: 150 }
+    aperture_mm: { shape: "circle", diameter: 440, length: 1500, bottom: 5 }
     drawing: drawings/T01-a.svg
   - id: T01-b
     label: "3 м"
-    dimensions_mm: { diameter: 450, length: 3000 }   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 450, height: 450, depth: 3000, diameter: 450, wire_pitch: 150 }
+    aperture_mm: { shape: "circle", diameter: 440, length: 3000, bottom: 5 }
     drawing: drawings/T01-b.svg

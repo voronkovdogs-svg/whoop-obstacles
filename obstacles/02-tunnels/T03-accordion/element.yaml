@@ -5,21 +5,26 @@ name_ru: "Тоннель-гармошка"
 name_en: "Accordion tunnel"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Узкий гофрированный рукав Ø300 мм: частая проволочная спираль (шаг 40 мм) в ткани, рёбра
+  заметно выступают внутрь и наружу. Растягивается от 500 до 1000 мм, в каталоге —
+  растянутое положение. Лежит на полу, концы прижаты грузиками.
+real_analog: "складной гофрированный тоннель / гофрорукав"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "оранжевый #FB8C00"
+difficulty: 3          # 1–5
+notes: >-
+  Проём 280 мм — меньше трёх габаритов вупа, нужна точная линия на входе. Рёбра внутри дают
+  рябь на картинке камеры.
 
 variants:
   - id: T03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (растянут, 1000 мм)"
+    dimensions_mm: { width: 300, height: 300, depth: 1000, diameter: 300, rib_pitch: 40 }
+    aperture_mm: { shape: "circle", diameter: 280, length: 1000, bottom: 10 }
     drawing: drawings/T03-a.svg

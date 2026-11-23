@@ -5,21 +5,26 @@ name_ru: "Изогнутый тоннель 90°"
 name_en: "Curved tunnel 90°"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевый тоннель Ø450 (как T01), уложенный дугой в горизонтальной плоскости: поворот на
+  90° с радиусом 750 мм по оси. Форму держат мешочки-утяжелители вдоль внешней стенки. От
+  входа выход не виден.
+real_analog: "детский игровой тоннель, уложенный дугой"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь, утяжелители"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "зелёный #43A047, окантовка торцов жёлтая #FFC400"
+difficulty: 3          # 1–5
+notes: >-
+  Вариант — поворот вправо; поворот влево получается зеркалированием по оси X. Длина по оси
+  1178 мм. Пролёт — плавный разворот на постоянном газе по внешней стенке.
 
 variants:
   - id: T02-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "поворот 90° вправо"
+    dimensions_mm: { width: 975, height: 450, depth: 975, diameter: 450, bend_radius: 750, bend_angle: 90 }
+    aperture_mm: { shape: "circle", diameter: 440, length: 1178, bottom: 5 }
     drawing: drawings/T02-a.svg

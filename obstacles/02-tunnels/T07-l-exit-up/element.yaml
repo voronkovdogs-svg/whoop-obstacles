@@ -5,21 +5,26 @@ name_ru: "Тоннель с выходом вверх"
 name_en: "L-tunnel, exit up"
 category: tunnels
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Тканевый тоннель Ø450: горизонтальный участок 1000 мм по полу, затем изгиб вверх на 90°
+  (радиус по оси 450 мм) и вертикальный участок 600 мм. Выход смотрит в потолок на высоте
+  1275 мм. Вертикальную часть держит стойка с двумя хомутами, стоящая за тоннелем.
+real_analog: "игровой тоннель, закреплённый на стойке"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; стойка — алюминий"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "фиолетовый #8E24AA, окантовка торцов жёлтая #FFC400"
+difficulty: 4          # 1–5
+notes: >-
+  На изгибе нужно поднять нос и добавить газ, выход не виден до последнего момента. После
+  выхода дрон летит вверх — нужен запас высоты до потолка (от 1 м).
 
 variants:
   - id: T07-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 450, height: 1275, depth: 1720, diameter: 450, horizontal_length: 1000, bend_radius: 450, vertical_length: 600 }
+    aperture_mm: { shape: "circle", diameter: 440, bottom: 5, exit_plane: "horizontal", exit_height: 1275 }
     drawing: drawings/T07-a.svg

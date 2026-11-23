@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 68, filled: 17
+Элементов: **85**, вариантов: **112**. draft: 59, filled: 26
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -23,15 +23,15 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [G15](obstacles/01-gates/G15-led/element.yaml) | Светодиодные ворота | gates | track | static | 2 | 2/2 | filled |
 | [G16](obstacles/01-gates/G16-banner-frame/element.yaml) | Ворота-рамка с баннером | gates | track | static | 1 | 1/1 | filled |
 | [G17](obstacles/01-gates/G17-flag-posts/element.yaml) | Флаговые ворота (две стойки) | gates | track | static | 1 | 1/1 | filled |
-| [T01](obstacles/02-tunnels/T01-fabric-straight/element.yaml) | Прямой тканевый тоннель | tunnels | track | static | 2 | 0/2 | draft |
-| [T02](obstacles/02-tunnels/T02-curved-90/element.yaml) | Изогнутый тоннель 90° | tunnels | track | static | 1 | 0/1 | draft |
-| [T03](obstacles/02-tunnels/T03-accordion/element.yaml) | Тоннель-гармошка | tunnels | track | static | 1 | 0/1 | draft |
-| [T04](obstacles/02-tunnels/T04-square-frames/element.yaml) | Квадратный тоннель из рамок | tunnels | track | static | 1 | 0/1 | draft |
-| [T05](obstacles/02-tunnels/T05-ring-corridor/element.yaml) | Коридор из колец | tunnels | track | static | 2 | 0/2 | draft |
-| [T06](obstacles/02-tunnels/T06-cardboard/element.yaml) | Картонный тоннель-коробка | tunnels | track | static | 1 | 0/1 | draft |
-| [T07](obstacles/02-tunnels/T07-l-exit-up/element.yaml) | Тоннель с выходом вверх | tunnels | track | static | 1 | 0/1 | draft |
-| [T08](obstacles/02-tunnels/T08-y-fork/element.yaml) | Тоннель-развилка | tunnels | track | static | 1 | 0/1 | draft |
-| [T09](obstacles/02-tunnels/T09-windows/element.yaml) | Тоннель с боковыми окнами | tunnels | track | static | 1 | 0/1 | draft |
+| [T01](obstacles/02-tunnels/T01-fabric-straight/element.yaml) | Прямой тканевый тоннель | tunnels | track | static | 2 | 2/2 | filled |
+| [T02](obstacles/02-tunnels/T02-curved-90/element.yaml) | Изогнутый тоннель 90° | tunnels | track | static | 1 | 1/1 | filled |
+| [T03](obstacles/02-tunnels/T03-accordion/element.yaml) | Тоннель-гармошка | tunnels | track | static | 1 | 1/1 | filled |
+| [T04](obstacles/02-tunnels/T04-square-frames/element.yaml) | Квадратный тоннель из рамок | tunnels | track | static | 1 | 1/1 | filled |
+| [T05](obstacles/02-tunnels/T05-ring-corridor/element.yaml) | Коридор из колец | tunnels | track | static | 2 | 2/2 | filled |
+| [T06](obstacles/02-tunnels/T06-cardboard/element.yaml) | Картонный тоннель-коробка | tunnels | track | static | 1 | 1/1 | filled |
+| [T07](obstacles/02-tunnels/T07-l-exit-up/element.yaml) | Тоннель с выходом вверх | tunnels | track | static | 1 | 1/1 | filled |
+| [T08](obstacles/02-tunnels/T08-y-fork/element.yaml) | Тоннель-развилка | tunnels | track | static | 1 | 1/1 | filled |
+| [T09](obstacles/02-tunnels/T09-windows/element.yaml) | Тоннель с боковыми окнами | tunnels | track | static | 1 | 1/1 | filled |
 | [M01](obstacles/03-markers/M01-beach-flag/element.yaml) | Флаг-парус | markers | track | static | 2 | 0/2 | draft |
 | [M02](obstacles/03-markers/M02-feather-flag/element.yaml) | Флаг-перо | markers | track | static | 1 | 0/1 | draft |
 | [M03](obstacles/03-markers/M03-cone/element.yaml) | Дорожный конус | markers | track | static | 2 | 0/2 | draft |
