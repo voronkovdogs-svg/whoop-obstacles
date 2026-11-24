@@ -5,26 +5,33 @@ name_ru: "Маятник"
 name_en: "Pendulum"
 category: dynamic
 scope: track            # track | indoor | outdoor | service
-behavior: dynamic         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: dynamic       # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
+description: >-
+  П-образная рама: две стойки Ø40 мм высотой 1600 мм на расстоянии 1200 мм, сверху
+  перекладина, ножки глубиной 500 мм. С центра перекладины на жёсткой лёгкой штанге длиной
+  1000 мм свисает поролоновый шар Ø200 мм; нижняя точка шара на высоте 400 мм. Маятник
+  качается поперёк направления полёта.
+real_analog: "маятник-препятствие на раме"
+mount: floor           # floor | stand | hanging | wall | free
+material: "рама — алюминий; штанга — карбон; шар — поролон"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "рама серая #9E9E9E, шар оранжево-красный #FF5722"
+difficulty: 3          # 1–5
 motion:               # только для dynamic
-  type: ""            # rotation | swing | linear | open-close
-  axis: ""            # x | y | z
-  period_s:           # период движения, с
-  amplitude: ""       # угол (°) или ход (мм)
-notes: ""
+  type: "swing"       # rotation | swing | linear | open-close
+  axis: "z"           # ось вращения/движения: x | y | z
+  period_s: 2.1       # период полного цикла, с
+  amplitude: "±25°"   # угол (°) или ход (мм)
+  note: "качание в плоскости рамы, поперёк полёта; размах центра шара ±465 мм"
+notes: >-
+  Пролёт в раму, пока шар у края. Период 2,1 с соответствует реальному маятнику длиной 1,1 м
+  (до центра шара). Шар мягкий: столкновение отбрасывает дрон, но не ломает.
 
 variants:
   - id: D02-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (±25°, 2,1 с)"
+    dimensions_mm: { width: 1240, height: 1600, depth: 500, span: 1200, rod: 1000, ball: 200, ball_bottom: 400 }
+    aperture_mm: { shape: "rect", width: 1160, height: 1580, bottom: 0, blocked_by: "маятник" }
     drawing: drawings/D02-a.svg

@@ -5,26 +5,33 @@ name_ru: "Вращающиеся ворота"
 name_en: "Rotating gate"
 category: dynamic
 scope: track            # track | indoor | outdoor | service
-behavior: dynamic         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: dynamic       # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
+description: >-
+  Квадратные тканевые ворота 500×500 (лента 50 мм) на вертикальной оси: снизу трубка Ø25 мм
+  от моторного основания 250×250×120 мм до нижней кромки ворот на высоте 300 мм. Ворота
+  непрерывно вращаются вокруг вертикальной оси, проходящей через их центр.
+real_analog: "вращающиеся ворота на мотор-редукторе"
+components: "G03-c на поворотном основании"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; основание — пластик, мотор-редуктор"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ворота бирюзовые #00ACC1, основание чёрное #212121"
+difficulty: 4          # 1–5
 motion:               # только для dynamic
-  type: ""            # rotation | swing | linear | open-close
-  axis: ""            # x | y | z
-  period_s:           # период движения, с
-  amplitude: ""       # угол (°) или ход (мм)
-notes: ""
+  type: "rotation"    # rotation | swing | linear | open-close
+  axis: "y"           # ось вращения/движения: x | y | z
+  period_s: 6         # период полного цикла, с
+  amplitude: "360°, непрерывно" # угол (°) или ход (мм)
+  passable: "нормаль ворот в пределах ±30° от направления полёта — окно 2 раза за оборот, по ~1 с"
+notes: >-
+  Пилот ловит момент, когда ворота развёрнуты к нему. Видимая ширина проёма =
+  400·|cos(угол)|. Скорость вращения — параметр: 6 с на оборот для обучения, 3 с — сложно.
 
 variants:
   - id: D01-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (6 с на оборот)"
+    dimensions_mm: { width: 500, height: 800, depth: 500, gate: 500, band: 50, lower_edge: 300, sweep_diameter: 500 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 350 }
     drawing: drawings/D01-a.svg

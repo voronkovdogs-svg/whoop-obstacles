@@ -5,26 +5,32 @@ name_ru: "Подвижная заслонка"
 name_en: "Shutter"
 category: dynamic
 scope: track            # track | indoor | outdoor | service
-behavior: dynamic         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: dynamic       # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
+description: >-
+  Жёсткая квадратная рамка 600×600 мм (профиль 100 мм, проём 400×400, нижний край рамки на
+  100 мм) на двух ножках. По верхней направляющей, продлённой вправо на 500 мм, ездит
+  сдвижная дверь 420×420 мм: закрыта — перекрывает проём, открыта — уезжает вправо за рамку.
+real_analog: "ворота со сдвижной дверью на линейном приводе"
+mount: floor           # floor | stand | hanging | wall | free
+material: "рамка — фанера/пластик, дверь — пенокартон, линейный привод"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "рамка белая #FAFAFA, дверь красная #E53935 с жёлтой каймой #FFD600"
+difficulty: 4          # 1–5
 motion:               # только для dynamic
-  type: ""            # rotation | swing | linear | open-close
-  axis: ""            # x | y | z
-  period_s:           # период движения, с
-  amplitude: ""       # угол (°) или ход (мм)
-notes: ""
+  type: "open-close"  # rotation | swing | linear | open-close
+  axis: "x"           # ось вращения/движения: x | y | z
+  period_s: 6         # период полного цикла, с
+  amplitude: "ход 420 мм" # угол (°) или ход (мм)
+  cycle: "открыто 2 с → закрывается 1 с → закрыто 2 с → открывается 1 с"
+notes: >-
+  Пилот подгадывает пролёт под открытую фазу. В симуляторе цикл и ход — параметры; можно
+  рандомизировать фазу, чтобы её нельзя было выучить.
 
 variants:
   - id: D03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (цикл 6 с)"
+    dimensions_mm: { width: 1100, height: 700, depth: 300, frame: 600, profile: 100, door: 420, travel: 420 }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 200 }
     drawing: drawings/D03-a.svg

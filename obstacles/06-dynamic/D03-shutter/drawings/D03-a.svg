@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720">
+
+<style>
+  .dim{stroke:#555;stroke-width:0.9;fill:none;marker-start:url(#ar);marker-end:url(#ar)}
+  .dim.in{stroke:#0057B8}
+  .ext{stroke:#888;stroke-width:0.6}
+  .dt{font-size:12px;fill:#333;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round}
+  .dt.in{fill:#0057B8}
+  .fl{stroke:#2E7D32;stroke-width:2;marker-end:url(#fa)}
+  .ft{font-size:11px;fill:#2E7D32;text-anchor:middle;font-family:Arial,Helvetica,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:3px}
+  .incircle{fill:none;stroke:#0057B8;stroke-width:0.8;stroke-dasharray:4 3}
+  text{font-family:Arial,Helvetica,sans-serif}
+</style>
+<defs>
+  <marker id="ar" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7"
+          orient="auto-start-reverse"><path d="M0,1 L10,5 L0,9 z" fill="#555"/></marker>
+  <marker id="fa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6"
+          orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+  <linearGradient id="cylv" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <linearGradient id="cylh" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#000" stop-opacity="0.28"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#000" stop-opacity="0.32"/></linearGradient>
+  <filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+</defs>
+
+<rect width="1000" height="720" fill="#fff"/>
+<rect x="10" y="10" width="980" height="700" fill="none" stroke="#333" stroke-width="1.5"/>
+<text x="30" y="46" font-size="22" font-weight="bold" fill="#222">D03-a · Подвижная заслонка</text>
+<text x="30" y="72" font-size="14" fill="#555">Вариант: std (цикл 6 с)  ·  Shutter  ·  размеры в мм  ·  1 px ≈ 2.3 мм</text>
+<line x1="660" y1="90" x2="660" y2="670" stroke="#ddd"/>
+<text x="40" y="104" font-size="13" fill="#888">Вид спереди (бледно — дверь открыта)</text>
+<text x="680" y="104" font-size="13" fill="#888">Вид сбоку · свой масштаб</text>
+<line x1="38" y1="527.4" x2="642" y2="527.4" stroke="#888" stroke-width="1.5"/>
+<line x1="38" y1="528.4" x2="31" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="50" y1="528.4" x2="43" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="62" y1="528.4" x2="55" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="74" y1="528.4" x2="67" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="86" y1="528.4" x2="79" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="98" y1="528.4" x2="91" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="110" y1="528.4" x2="103" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="122" y1="528.4" x2="115" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="134" y1="528.4" x2="127" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="146" y1="528.4" x2="139" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="158" y1="528.4" x2="151" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="170" y1="528.4" x2="163" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="182" y1="528.4" x2="175" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="194" y1="528.4" x2="187" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="206" y1="528.4" x2="199" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="218" y1="528.4" x2="211" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="230" y1="528.4" x2="223" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="242" y1="528.4" x2="235" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="254" y1="528.4" x2="247" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="266" y1="528.4" x2="259" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="278" y1="528.4" x2="271" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="290" y1="528.4" x2="283" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="302" y1="528.4" x2="295" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="314" y1="528.4" x2="307" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="326" y1="528.4" x2="319" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="338" y1="528.4" x2="331" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="350" y1="528.4" x2="343" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="362" y1="528.4" x2="355" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="374" y1="528.4" x2="367" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="386" y1="528.4" x2="379" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="398" y1="528.4" x2="391" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="410" y1="528.4" x2="403" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="422" y1="528.4" x2="415" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="434" y1="528.4" x2="427" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="446" y1="528.4" x2="439" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="458" y1="528.4" x2="451" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="470" y1="528.4" x2="463" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="482" y1="528.4" x2="475" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="494" y1="528.4" x2="487" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="506" y1="528.4" x2="499" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="518" y1="528.4" x2="511" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="530" y1="528.4" x2="523" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="542" y1="528.4" x2="535" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="554" y1="528.4" x2="547" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="566" y1="528.4" x2="559" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="578" y1="528.4" x2="571" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="590" y1="528.4" x2="583" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="602" y1="528.4" x2="595" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="614" y1="528.4" x2="607" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="626" y1="528.4" x2="619" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<line x1="638" y1="528.4" x2="631" y2="535.4" stroke="#888" stroke-width="0.8"/>
+<defs><marker id="mo" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#EF6C00"/></marker></defs>
+<rect x="105.0" y="484.7" width="25.6" height="42.7" fill="#9e9e9e" stroke="#222" stroke-width="1.2" />
+<rect x="335.7" y="484.7" width="25.6" height="42.7" fill="#9e9e9e" stroke="#222" stroke-width="1.2" />
+<path d="M105.0,484.7 L361.4,484.7 L361.4,228.3 L105.0,228.3 Z M147.7,442.0 L318.6,442.0 L318.6,271.0 L147.7,271.0 Z" fill="#FAFAFA" fill-rule="evenodd" stroke="#222" stroke-width="1.4"/>
+<rect x="105.0" y="219.8" width="470.0" height="8.5" fill="#757575" stroke="#222" stroke-width="1.2" />
+<rect x="322.9" y="266.8" width="179.5" height="179.5" fill="#E53935" stroke="#222" stroke-width="1.2" opacity="0.35" stroke-dasharray="5 4"/>
+<rect x="329.3" y="273.2" width="166.6" height="166.6" fill="none" stroke="#FFD600" stroke-width="3" opacity="0.35" stroke-dasharray="5 4"/>
+<rect x="143.5" y="266.8" width="179.5" height="179.5" fill="#E53935" stroke="#222" stroke-width="1.2" />
+<rect x="149.9" y="273.2" width="166.6" height="166.6" fill="none" stroke="#FFD600" stroke-width="3" />
+<line x1="233.2" y1="189.9" x2="412.6" y2="189.9" stroke="#EF6C00" stroke-width="2" marker-start="url(#mo)" marker-end="url(#mo)"/>
+<text x="322.9" y="177.0" font-size="12" text-anchor="middle" fill="#EF6C00" font-weight="bold" paint-order="stroke" stroke="#fff" stroke-width="3">ход 420</text>
+<text x="340.0" y="574.4" font-size="11" text-anchor="middle" fill="#EF6C00" >цикл 6 с: открыто 2 с → закрывается 1 с → закрыто 2 с → открывается 1 с</text>
+<line x1="105.0" y1="530.4" x2="105.0" y2="560.4" class="ext"/>
+<line x1="575.0" y1="530.4" x2="575.0" y2="560.4" class="ext"/>
+<line x1="105.0" y1="557.4" x2="575.0" y2="557.4" class="dim"/>
+<text x="340.0" y="553.4" class="dt">1100</text>
+<line x1="364.4" y1="527.4" x2="392.4" y2="527.4" class="ext"/>
+<line x1="364.4" y1="228.3" x2="392.4" y2="228.3" class="ext"/>
+<line x1="389.4" y1="527.4" x2="389.4" y2="228.3" class="dim"/>
+<text x="394.4" y="377.9" class="dt" transform="rotate(-90 394.4 377.9)" dy="10">700</text>
+<line x1="102.0" y1="527.4" x2="74.0" y2="527.4" class="ext"/>
+<line x1="102.0" y1="442.0" x2="74.0" y2="442.0" class="ext"/>
+<line x1="77.0" y1="527.4" x2="77.0" y2="442.0" class="dim"/>
+<text x="72.0" y="484.7" class="dt" transform="rotate(-90 72.0 484.7)" dy="-0">200</text>
+<line x1="147.7" y1="459.0" x2="318.6" y2="459.0" class="dim in"/>
+<text x="233.2" y="464.0" class="dt in" dy="9">400</text>
+<line x1="678" y1="528.9" x2="962" y2="528.9" stroke="#888" stroke-width="1.5"/>
+<line x1="678" y1="529.9" x2="671" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="690" y1="529.9" x2="683" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="702" y1="529.9" x2="695" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="714" y1="529.9" x2="707" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="726" y1="529.9" x2="719" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="738" y1="529.9" x2="731" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="750" y1="529.9" x2="743" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="762" y1="529.9" x2="755" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="774" y1="529.9" x2="767" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="786" y1="529.9" x2="779" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="798" y1="529.9" x2="791" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="810" y1="529.9" x2="803" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="822" y1="529.9" x2="815" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="834" y1="529.9" x2="827" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="846" y1="529.9" x2="839" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="858" y1="529.9" x2="851" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="870" y1="529.9" x2="863" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="882" y1="529.9" x2="875" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="894" y1="529.9" x2="887" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="906" y1="529.9" x2="899" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="918" y1="529.9" x2="911" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="930" y1="529.9" x2="923" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="942" y1="529.9" x2="935" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<line x1="954" y1="529.9" x2="947" y2="536.9" stroke="#888" stroke-width="0.8"/>
+<rect x="755.3" y="522.4" width="129.5" height="6.5" fill="#9e9e9e" stroke="#222" stroke-width="1.2" />
+<rect x="815.7" y="226.8" width="8.6" height="258.9" fill="#FAFAFA" stroke="#222" stroke-width="1.2" />
+<rect x="825.2" y="265.6" width="3.5" height="181.3" fill="#E53935" stroke="#222" stroke-width="1.2" />
+<line x1="755.3" y1="531.9" x2="755.3" y2="561.9" class="ext"/>
+<line x1="884.7" y1="531.9" x2="884.7" y2="561.9" class="ext"/>
+<line x1="755.3" y1="558.9" x2="884.7" y2="558.9" class="dim"/>
+<text x="820.0" y="554.9" class="dt">300</text>
+<line x1="699.3" y1="356.3" x2="741.3" y2="356.3" class="fl"/>
+<text x="720.3" y="350.3" class="ft">пролёт</text>
+<line x1="10" y1="678" x2="990" y2="678" stroke="#333"/>
+<text x="30" y="700" font-size="12" fill="#444">Материал: рамка — фанера/пластик, дверь — пенокартон, линейный привод  ·  Жёсткость: hard  ·  Крепление: floor  ·  Сложность: 4/5</text>
+</svg>

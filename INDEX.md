@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 33, filled: 52
+Элементов: **85**, вариантов: **112**. draft: 29, filled: 56
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -58,10 +58,10 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [C07](obstacles/05-combos/C07-spiral/element.yaml) | Спираль из колец | combos | track | static | 1 | 1/1 | filled |
 | [C08](obstacles/05-combos/C08-funnel/element.yaml) | Воронка (уменьшающиеся ворота) | combos | track | static | 1 | 1/1 | filled |
 | [C09](obstacles/05-combos/C09-adjustable-gate/element.yaml) | Ворота с переменной шириной | combos | track | static | 1 | 1/1 | filled |
-| [D01](obstacles/06-dynamic/D01-rotating-gate/element.yaml) | Вращающиеся ворота | dynamic | track | dynamic | 1 | 0/1 | draft |
-| [D02](obstacles/06-dynamic/D02-pendulum/element.yaml) | Маятник | dynamic | track | dynamic | 1 | 0/1 | draft |
-| [D03](obstacles/06-dynamic/D03-shutter/element.yaml) | Подвижная заслонка | dynamic | track | dynamic | 1 | 0/1 | draft |
-| [D04](obstacles/06-dynamic/D04-swinging/element.yaml) | Качающееся подвешенное препятствие | dynamic | track | dynamic | 1 | 0/1 | draft |
+| [D01](obstacles/06-dynamic/D01-rotating-gate/element.yaml) | Вращающиеся ворота | dynamic | track | dynamic | 1 | 1/1 | filled |
+| [D02](obstacles/06-dynamic/D02-pendulum/element.yaml) | Маятник | dynamic | track | dynamic | 1 | 1/1 | filled |
+| [D03](obstacles/06-dynamic/D03-shutter/element.yaml) | Подвижная заслонка | dynamic | track | dynamic | 1 | 1/1 | filled |
+| [D04](obstacles/06-dynamic/D04-swinging/element.yaml) | Качающееся подвешенное препятствие | dynamic | track | dynamic | 1 | 1/1 | filled |
 | [I01](obstacles/07-interior/I01-table/element.yaml) | Стол | interior | indoor | static | 1 | 0/1 | draft |
 | [I02](obstacles/07-interior/I02-chair/element.yaml) | Стул | interior | indoor | static | 1 | 0/1 | draft |
 | [I03](obstacles/07-interior/I03-doorway/element.yaml) | Дверной проём | interior | indoor | static | 2 | 0/2 | draft |
