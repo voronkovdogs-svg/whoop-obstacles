@@ -4,22 +4,26 @@ id: O02
 name_ru: "Ветка дерева"
 name_en: "Tree branch"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Ствол Ø250 мм; на высоте 1500 мм от него горизонтально отходит ветка длиной 2000 мм,
+  сужающаяся от Ø120 до Ø40 мм, с листвой на внешней половине. Под веткой свободный проход.
+real_analog: "нижняя ветка дерева в парке"
+mount: floor           # floor | stand | hanging | wall | free
+material: "дерево, листва"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "кора #6D4C41, листва #43A047"
+difficulty: 2          # 1–5
+notes: >-
+  Классическое уличное препятствие: пролёт под веткой у ствола или облёт листвы. Листва
+  мягкая, ветка жёсткая.
 
 variants:
   - id: O02-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (ветка на 1500)"
+    dimensions_mm: { width: 2125, height: 2500, depth: 600, trunk: 250, branch_height: 1500, branch_length: 2000 }
+    aperture_mm: { shape: "under", width: 2000, height: 1440, bottom: 0 }
     drawing: drawings/O02-a.svg

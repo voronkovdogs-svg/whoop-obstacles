@@ -4,22 +4,27 @@ id: O04
 name_ru: "Забор / штакетник"
 name_en: "Picket fence"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Секция штакетника 2000×1000 мм: заострённые доски 80 мм с зазорами 40 мм на двух
+  горизонтальных прожилинах (на 250 и 750 мм), столбы 100×100 мм высотой 1100 мм по краям
+  секции.
+real_analog: "деревянный штакетник"
+mount: floor           # floor | stand | hanging | wall | free
+material: "дерево"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "белый #FAFAFA"
+difficulty: 1          # 1–5
+notes: >-
+  Зазоры 40 мм непроходимы — перелёт сверху (не ниже 1100 мм над землёй) или вдоль забора
+  как ориентир.
 
 variants:
   - id: O04-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "секция 2000"
+    dimensions_mm: { width: 2100, height: 1100, depth: 100, picket: 80, gap: 40, post: 100 }
+    aperture_mm: { shape: "over", min_height: 1100 }
     drawing: drawings/O04-a.svg

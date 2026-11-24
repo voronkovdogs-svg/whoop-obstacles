@@ -4,22 +4,27 @@ id: O05
 name_ru: "Садовая арка"
 name_en: "Garden arch"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Металлическая садовая арка из двух параллельных рамок (труба Ø25 мм) на расстоянии 400 мм,
+  связанных решёткой. Ширина 1200 мм, прямые стойки до 1600 мм, сверху полукруг — верх 2200
+  мм. По арке вьются растения.
+real_analog: "садовая пергола-арка"
+mount: floor           # floor | stand | hanging | wall | free
+material: "стальная труба, вьющиеся растения"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "металл чёрный #263238, растения #66BB6A"
+difficulty: 1          # 1–5
+notes: >-
+  Большие «ворота» на улице: пролёт насквозь. Растения добавляют мягкую кайму, которая
+  цепляет пропеллеры.
 
 variants:
   - id: O05-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1200×2200"
+    dimensions_mm: { width: 1200, height: 2200, depth: 400, tube: 25, leg_height: 1600 }
+    aperture_mm: { shape: "arch", width: 1100, height: 2150, bottom: 0, length: 400 }
     drawing: drawings/O05-a.svg

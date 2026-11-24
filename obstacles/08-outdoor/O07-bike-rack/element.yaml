@@ -4,22 +4,27 @@ id: O07
 name_ru: "Велопарковка"
 name_en: "Bike rack"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Ряд из пяти П-образных дуг из трубы Ø50 мм, вмонтированных в землю: ширина дуги 600 мм,
+  высота 800 мм. Дуги стоят параллельно друг другу с шагом 800 мм — вдоль ряда получается
+  коридор из «ворот».
+real_analog: "уличная велопарковка из дуг"
+mount: floor           # floor | stand | hanging | wall | free
+material: "оцинкованная сталь"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "оцинковка #B0BEC5"
+difficulty: 2          # 1–5
+notes: >-
+  Пролёт вдоль ряда сквозь все дуги на высоте 300–600 мм — уличный аналог коридора из колец
+  (T05).
 
 variants:
   - id: O07-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 5 дуг"
+    dimensions_mm: { width: 600, height: 800, depth: 3250, hoops: 5, step: 800, tube: 50 }
+    aperture_mm: { shape: "arch", width: 500, height: 775, bottom: 0, count: 5 }
     drawing: drawings/O07-a.svg

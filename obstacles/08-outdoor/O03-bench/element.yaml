@@ -4,22 +4,26 @@ id: O03
 name_ru: "Скамейка"
 name_en: "Bench"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Парковая скамейка длиной 1800 мм: две чугунные боковины по краям, сиденье из реек на
+  высоте 450 мм глубиной 450 мм, спинка из реек до 850 мм. Под сиденьем — проём между
+  боковинами.
+real_analog: "парковая скамейка"
+mount: floor           # floor | stand | hanging | wall | free
+material: "деревянные рейки, чугунные боковины"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "рейки #A1887F, боковины чёрные #263238"
+difficulty: 3          # 1–5
+notes: >-
+  Пролёт под сиденьем вдоль или поперёк скамейки; спинка закрывает выход сверху.
 
 variants:
   - id: O03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1800"
+    dimensions_mm: { width: 1800, height: 850, depth: 600, seat_height: 450, seat_depth: 450, side: 60 }
+    aperture_mm: { shape: "under", width: 1620, height: 420, bottom: 0 }
     drawing: drawings/O03-a.svg

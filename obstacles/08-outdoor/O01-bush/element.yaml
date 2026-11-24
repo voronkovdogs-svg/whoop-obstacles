@@ -4,22 +4,26 @@ id: O01
 name_ru: "Куст"
 name_en: "Bush"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Плотный стриженый куст: крона примерно эллипсоид 1200×1000×1000 мм (ширина × высота ×
+  глубина), стоит на земле, ствола не видно.
+real_analog: "живая изгородь / самшит"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ветки, листья"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "тёмно-зелёный #2E7D32"
+difficulty: 1          # 1–5
+notes: >-
+  Ветки цепляют пропеллеры — в симуляторе касание = торможение и возможное падение. Облёт
+  или перелёт.
 
 variants:
   - id: O01-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 1200, height: 1000, depth: 1000 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/O01-a.svg

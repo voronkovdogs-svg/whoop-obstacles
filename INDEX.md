@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 16, filled: 69
+Элементов: **85**, вариантов: **112**. draft: 9, filled: 76
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -75,13 +75,13 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [I11](obstacles/07-interior/I11-plant/element.yaml) | Комнатное растение | interior | indoor | static | 1 | 1/1 | filled |
 | [I12](obstacles/07-interior/I12-box-stack/element.yaml) | Штабель коробок | interior | indoor | static | 1 | 1/1 | filled |
 | [I13](obstacles/07-interior/I13-box-drop/element.yaml) | Ящик для нырка (box drop) | interior | indoor | static | 1 | 1/1 | filled |
-| [O01](obstacles/08-outdoor/O01-bush/element.yaml) | Куст | outdoor | outdoor | static | 1 | 0/1 | draft |
-| [O02](obstacles/08-outdoor/O02-branch/element.yaml) | Ветка дерева | outdoor | outdoor | static | 1 | 0/1 | draft |
-| [O03](obstacles/08-outdoor/O03-bench/element.yaml) | Скамейка | outdoor | outdoor | static | 1 | 0/1 | draft |
-| [O04](obstacles/08-outdoor/O04-fence/element.yaml) | Забор / штакетник | outdoor | outdoor | static | 1 | 0/1 | draft |
-| [O05](obstacles/08-outdoor/O05-garden-arch/element.yaml) | Садовая арка | outdoor | outdoor | static | 1 | 0/1 | draft |
-| [O06](obstacles/08-outdoor/O06-playground/element.yaml) | Детская площадка | outdoor | outdoor | static | 2 | 0/2 | draft |
-| [O07](obstacles/08-outdoor/O07-bike-rack/element.yaml) | Велопарковка | outdoor | outdoor | static | 1 | 0/1 | draft |
+| [O01](obstacles/08-outdoor/O01-bush/element.yaml) | Куст | outdoor | outdoor | static | 1 | 1/1 | filled |
+| [O02](obstacles/08-outdoor/O02-branch/element.yaml) | Ветка дерева | outdoor | outdoor | static | 1 | 1/1 | filled |
+| [O03](obstacles/08-outdoor/O03-bench/element.yaml) | Скамейка | outdoor | outdoor | static | 1 | 1/1 | filled |
+| [O04](obstacles/08-outdoor/O04-fence/element.yaml) | Забор / штакетник | outdoor | outdoor | static | 1 | 1/1 | filled |
+| [O05](obstacles/08-outdoor/O05-garden-arch/element.yaml) | Садовая арка | outdoor | outdoor | static | 1 | 1/1 | filled |
+| [O06](obstacles/08-outdoor/O06-playground/element.yaml) | Детская площадка | outdoor | outdoor | static | 2 | 2/2 | filled |
+| [O07](obstacles/08-outdoor/O07-bike-rack/element.yaml) | Велопарковка | outdoor | outdoor | static | 1 | 1/1 | filled |
 | [S01](obstacles/09-service/S01-start-pad/element.yaml) | Стартовая площадка | service | service | static | 1 | 0/1 | draft |
 | [S02](obstacles/09-service/S02-landing/element.yaml) | Посадка | service | service | static | 2 | 0/2 | draft |
 | [S03](obstacles/09-service/S03-finish-gate/element.yaml) | Финишные ворота | service | service | static | 1 | 0/1 | draft |

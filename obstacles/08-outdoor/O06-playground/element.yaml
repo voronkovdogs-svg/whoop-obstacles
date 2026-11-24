@@ -4,27 +4,35 @@ id: O06
 name_ru: "Детская площадка"
 name_en: "Playground"
 category: outdoor
-scope: outdoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: outdoor          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Элементы детской площадки — крупные сложные объекты с проёмами. Горка: площадка 1000×1000
+  на высоте 1200 мм на четырёх столбах, скат шириной 500 мм и длиной 2400 мм под 30°, сзади
+  лестница. Качели: А-образные опоры, верхняя балка на 2200 мм длиной 2400 мм, два сиденья
+  на цепях на высоте 450 мм.
+real_analog: "горка и качели во дворе"
+mount: floor           # floor | stand | hanging | wall | free
+material: "металл, пластик, цепи"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "по вариантам"
+difficulty: 2          # 1–5
+notes: >-
+  Горка: пролёт под площадкой или вдоль ската. Качели: пролёт между цепями или под балкой. В
+  реальности качели могут двигаться — в симуляторе статичны (подвижная версия — как D02).
 
 variants:
   - id: O06-a
     label: "горка"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    color: "столбы синие #1E88E5, площадка красная #E53935, скат жёлтый #FDD835"
+    dimensions_mm: { width: 1000, height: 2200, depth: 3700, platform: 1000, platform_height: 1200, chute: 2400, chute_width: 500, chute_angle: 30 }
+    aperture_mm: { shape: "under", width: 900, height: 1150, bottom: 0 }
     drawing: drawings/O06-a.svg
   - id: O06-b
     label: "качели"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    color: "рама зелёная #43A047, сиденья чёрные #212121"
+    dimensions_mm: { width: 2500, height: 2200, depth: 1500, beam: 2400, seats: 2, seat_height: 450 }
+    aperture_mm: { shape: "rect", width: 2300, height: 2150, bottom: 0 }
     drawing: drawings/O06-b.svg
