@@ -85,7 +85,7 @@
 <line x1="626" y1="586.0" x2="619" y2="593.0" stroke="#888" stroke-width="0.8"/>
 <line x1="638" y1="586.0" x2="631" y2="593.0" stroke="#888" stroke-width="0.8"/>
 <rect x="186.2" y="576.8" width="61.5" height="8.2" fill="#424242" stroke="#222" stroke-width="1.2" />
-<rect x="214.9" y="175.0" width="4.1" height="401.8" fill="#BDBDBD" stroke="#222" stroke-width="1.2" />
+<rect x="214.9" y="175.0" width="4.1" height="401.8" fill="#FAFAFA" stroke="#222" stroke-width="1.2" />
 <rect x="194.5" y="216.0" width="20.5" height="20.5" fill="#E53935" stroke="#222" stroke-width="0.6" />
 <rect x="194.5" y="195.5" width="20.5" height="20.5" fill="#FFFFFF" stroke="#222" stroke-width="0.6" />
 <rect x="194.5" y="175.0" width="20.5" height="20.5" fill="#E53935" stroke="#222" stroke-width="0.6" />
@@ -99,7 +99,7 @@
 <rect x="133.0" y="195.5" width="20.5" height="20.5" fill="#E53935" stroke="#222" stroke-width="0.6" />
 <rect x="133.0" y="175.0" width="20.5" height="20.5" fill="#FFFFFF" stroke="#222" stroke-width="0.6" />
 <rect x="432.2" y="576.8" width="61.5" height="8.2" fill="#424242" stroke="#222" stroke-width="1.2" />
-<rect x="460.9" y="175.0" width="4.1" height="401.8" fill="#BDBDBD" stroke="#222" stroke-width="1.2" />
+<rect x="460.9" y="175.0" width="4.1" height="401.8" fill="#FAFAFA" stroke="#222" stroke-width="1.2" />
 <rect x="465.1" y="216.0" width="20.5" height="20.5" fill="#E53935" stroke="#222" stroke-width="0.6" />
 <rect x="465.1" y="195.5" width="20.5" height="20.5" fill="#FFFFFF" stroke="#222" stroke-width="0.6" />
 <rect x="465.1" y="175.0" width="20.5" height="20.5" fill="#E53935" stroke="#222" stroke-width="0.6" />
@@ -152,7 +152,7 @@
 <line x1="942" y1="586.0" x2="935" y2="593.0" stroke="#888" stroke-width="0.8"/>
 <line x1="954" y1="586.0" x2="947" y2="593.0" stroke="#888" stroke-width="0.8"/>
 <rect x="789.2" y="576.8" width="61.5" height="8.2" fill="#424242" stroke="#222" stroke-width="1.2" />
-<rect x="818.0" y="175.0" width="4.1" height="401.8" fill="#BDBDBD" stroke="#222" stroke-width="1.2" />
+<rect x="818.0" y="175.0" width="4.1" height="401.8" fill="#FAFAFA" stroke="#222" stroke-width="1.2" />
 <rect x="819.4" y="175.0" width="1.2" height="61.5" fill="#E53935" stroke="#222" stroke-width="1.2" />
 <line x1="789.2" y1="588.0" x2="789.2" y2="618.0" class="ext"/>
 <line x1="850.8" y1="588.0" x2="850.8" y2="618.0" class="ext"/>
