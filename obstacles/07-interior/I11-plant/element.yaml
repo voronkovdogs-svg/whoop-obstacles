@@ -4,22 +4,25 @@ id: I11
 name_ru: "Комнатное растение"
 name_en: "Houseplant"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Напольное растение (фикус): горшок Ø300×300 мм, ствол, крона примерно эллипсоид Ø700 мм с
+  верхом на высоте 1500 мм.
+real_analog: "фикус в напольном горшке"
+mount: floor           # floor | stand | hanging | wall | free
+material: "листья, горшок — керамика"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "листья зелёные #388E3C, горшок терракотовый #A1887F"
+difficulty: 1          # 1–5
+notes: >-
+  Крона мягкая, но ветки цепляют пропеллеры. Ориентир и элемент облёта.
 
 variants:
   - id: I11-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1,5 м"
+    dimensions_mm: { width: 700, height: 1500, depth: 700, pot: 300, pot_height: 300, crown: 700 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I11-a.svg

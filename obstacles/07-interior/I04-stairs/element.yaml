@@ -4,22 +4,28 @@ id: I04
 name_ru: "Лестничный марш"
 name_en: "Staircase"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Прямой марш из 10 ступеней: подъём 170 мм, проступь 280 мм, ширина 900 мм. Общий подъём
+  1700 мм, длина 2800 мм. Слева стена, справа перила высотой 900 мм над ступенями со
+  стойками через каждую ступень.
+real_analog: "внутренняя лестница в доме"
+mount: floor           # floor | stand | hanging | wall | free
+material: "дерево, металлические перила"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "ступени — орех #8D6E63, перила чёрные #212121, стена белая #F5F5F5"
+difficulty: 3          # 1–5
+notes: >-
+  Пролёт вверх или вниз вдоль марша на постоянной высоте над ступенями — тренирует плавный
+  набор/сброс высоты. Над лестницей обычно потолок следующего этажа — свободная высота ~2000
+  мм над ступенями.
 
 variants:
   - id: I04-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 10 ступеней"
+    dimensions_mm: { width: 900, height: 1700, depth: 2800, steps: 10, riser: 170, tread: 280, rail_height: 900 }
+    aperture_mm: { shape: "corridor", width: 860, headroom: 2000, rise: 1700 }
     drawing: drawings/I04-a.svg

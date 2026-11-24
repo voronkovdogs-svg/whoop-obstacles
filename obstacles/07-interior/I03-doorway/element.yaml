@@ -4,27 +4,34 @@ id: I03
 name_ru: "Дверной проём"
 name_en: "Doorway"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Межкомнатный проём 800×2000 мм в стене толщиной 120 мм, наличники 70 мм. Дверь 800×2000×40
+  мм на петлях слева, открывается от пилота. На чертеже показан участок стены 1600 мм вокруг
+  проёма.
+real_analog: "межкомнатная дверь"
+mount: wall            # floor | stand | hanging | wall | free
+material: "стена — гипсокартон; дверь — МДФ"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "стена белая #F5F5F5, дверь светло-серая #ECEFF1, наличник #D7CCC8"
+difficulty: 2          # 1–5
+notes: >-
+  Переход между комнатами. Приоткрытая дверь оставляет узкую щель у замка; ширина щели =
+  800·(1 − cos угла).
 
 variants:
   - id: I03-a
-    label: "открыт"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "открыт (90°)"
+    difficulty: 1
+    dimensions_mm: { width: 1600, height: 2500, depth: 920, door: 800, opening_height: 2000, wall: 120, door_angle: 90 }
+    aperture_mm: { shape: "rect", width: 800, height: 2000, bottom: 0 }
     drawing: drawings/I03-a.svg
   - id: I03-b
-    label: "приоткрыт"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "приоткрыт (45°)"
+    difficulty: 4
+    dimensions_mm: { width: 1600, height: 2500, depth: 690, door: 800, opening_height: 2000, wall: 120, door_angle: 45 }
+    aperture_mm: { shape: "slot", width: 234, height: 2000, bottom: 0 }
     drawing: drawings/I03-b.svg

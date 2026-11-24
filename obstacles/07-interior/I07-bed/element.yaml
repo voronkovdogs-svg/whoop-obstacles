@@ -4,22 +4,26 @@ id: I07
 name_ru: "Кровать"
 name_en: "Bed"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Двуспальная кровать 1600×2000 мм: каркас-рама 80 мм на ножках, просвет под рамой 250 мм,
+  верх матраса на высоте 500 мм, изголовье до 1000 мм.
+real_analog: "двуспальная кровать на ножках"
+mount: floor           # floor | stand | hanging | wall | free
+material: "дерево, матрас"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "рама — тёмное дерево #6D4C41, бельё белое #FAFAFA"
+difficulty: 5          # 1–5
+notes: >-
+  Пролёт под кроватью — 250 мм просвета у самого пола и темнота. Экстремальный элемент
+  домашних трасс.
 
 variants:
   - id: I07-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1600×2000"
+    dimensions_mm: { width: 1600, height: 1000, depth: 2000, clearance: 250, frame: 80, mattress_top: 500, headboard: 1000 }
+    aperture_mm: { shape: "under", width: 1500, height: 250, bottom: 0, length: 2000 }
     drawing: drawings/I07-a.svg

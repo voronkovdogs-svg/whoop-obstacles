@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 29, filled: 56
+Элементов: **85**, вариантов: **112**. draft: 16, filled: 69
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -62,19 +62,19 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [D02](obstacles/06-dynamic/D02-pendulum/element.yaml) | Маятник | dynamic | track | dynamic | 1 | 1/1 | filled |
 | [D03](obstacles/06-dynamic/D03-shutter/element.yaml) | Подвижная заслонка | dynamic | track | dynamic | 1 | 1/1 | filled |
 | [D04](obstacles/06-dynamic/D04-swinging/element.yaml) | Качающееся подвешенное препятствие | dynamic | track | dynamic | 1 | 1/1 | filled |
-| [I01](obstacles/07-interior/I01-table/element.yaml) | Стол | interior | indoor | static | 1 | 0/1 | draft |
-| [I02](obstacles/07-interior/I02-chair/element.yaml) | Стул | interior | indoor | static | 1 | 0/1 | draft |
-| [I03](obstacles/07-interior/I03-doorway/element.yaml) | Дверной проём | interior | indoor | static | 2 | 0/2 | draft |
-| [I04](obstacles/07-interior/I04-stairs/element.yaml) | Лестничный марш | interior | indoor | static | 1 | 0/1 | draft |
-| [I05](obstacles/07-interior/I05-sofa/element.yaml) | Диван | interior | indoor | static | 1 | 0/1 | draft |
-| [I06](obstacles/07-interior/I06-shelf/element.yaml) | Стеллаж | interior | indoor | static | 1 | 0/1 | draft |
-| [I07](obstacles/07-interior/I07-bed/element.yaml) | Кровать | interior | indoor | static | 1 | 0/1 | draft |
-| [I08](obstacles/07-interior/I08-tall-furniture/element.yaml) | Крупная мебель | interior | indoor | static | 2 | 0/2 | draft |
-| [I09](obstacles/07-interior/I09-chandelier/element.yaml) | Люстра / подвесная лампа | interior | indoor | static | 1 | 0/1 | draft |
-| [I10](obstacles/07-interior/I10-ceiling-fan/element.yaml) | Потолочный вентилятор | interior | indoor | dynamic | 1 | 0/1 | draft |
-| [I11](obstacles/07-interior/I11-plant/element.yaml) | Комнатное растение | interior | indoor | static | 1 | 0/1 | draft |
-| [I12](obstacles/07-interior/I12-box-stack/element.yaml) | Штабель коробок | interior | indoor | static | 1 | 0/1 | draft |
-| [I13](obstacles/07-interior/I13-box-drop/element.yaml) | Ящик для нырка (box drop) | interior | indoor | static | 1 | 0/1 | draft |
+| [I01](obstacles/07-interior/I01-table/element.yaml) | Стол | interior | indoor | static | 1 | 1/1 | filled |
+| [I02](obstacles/07-interior/I02-chair/element.yaml) | Стул | interior | indoor | static | 1 | 1/1 | filled |
+| [I03](obstacles/07-interior/I03-doorway/element.yaml) | Дверной проём | interior | indoor | static | 2 | 2/2 | filled |
+| [I04](obstacles/07-interior/I04-stairs/element.yaml) | Лестничный марш | interior | indoor | static | 1 | 1/1 | filled |
+| [I05](obstacles/07-interior/I05-sofa/element.yaml) | Диван | interior | indoor | static | 1 | 1/1 | filled |
+| [I06](obstacles/07-interior/I06-shelf/element.yaml) | Стеллаж | interior | indoor | static | 1 | 1/1 | filled |
+| [I07](obstacles/07-interior/I07-bed/element.yaml) | Кровать | interior | indoor | static | 1 | 1/1 | filled |
+| [I08](obstacles/07-interior/I08-tall-furniture/element.yaml) | Крупная мебель | interior | indoor | static | 2 | 2/2 | filled |
+| [I09](obstacles/07-interior/I09-chandelier/element.yaml) | Люстра / подвесная лампа | interior | indoor | static | 1 | 1/1 | filled |
+| [I10](obstacles/07-interior/I10-ceiling-fan/element.yaml) | Потолочный вентилятор | interior | indoor | dynamic | 1 | 1/1 | filled |
+| [I11](obstacles/07-interior/I11-plant/element.yaml) | Комнатное растение | interior | indoor | static | 1 | 1/1 | filled |
+| [I12](obstacles/07-interior/I12-box-stack/element.yaml) | Штабель коробок | interior | indoor | static | 1 | 1/1 | filled |
+| [I13](obstacles/07-interior/I13-box-drop/element.yaml) | Ящик для нырка (box drop) | interior | indoor | static | 1 | 1/1 | filled |
 | [O01](obstacles/08-outdoor/O01-bush/element.yaml) | Куст | outdoor | outdoor | static | 1 | 0/1 | draft |
 | [O02](obstacles/08-outdoor/O02-branch/element.yaml) | Ветка дерева | outdoor | outdoor | static | 1 | 0/1 | draft |
 | [O03](obstacles/08-outdoor/O03-bench/element.yaml) | Скамейка | outdoor | outdoor | static | 1 | 0/1 | draft |

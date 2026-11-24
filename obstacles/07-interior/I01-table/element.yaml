@@ -4,22 +4,27 @@ id: I01
 name_ru: "Стол"
 name_en: "Table"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Обеденный стол: столешница 1200×800×25 мм на высоте 750 мм (верх), четыре ножки 50×50 мм,
+  отступ ножек от краёв 50 мм. Под столом свободно — пролёт вдоль длинной стороны между
+  ножками.
+real_analog: "обычный обеденный стол"
+mount: floor           # floor | stand | hanging | wall | free
+material: "дерево (массив/ЛДСП)"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "дуб #A1887F"
+difficulty: 2          # 1–5
+notes: >-
+  Пролёт под столом — классика домашнего вупа. Поперёк стола проём уже (600 мм между
+  ножками). Под столешницей темнее — камера пересвечивает выход.
 
 variants:
   - id: I01-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 1200×800"
+    dimensions_mm: { width: 1200, height: 750, depth: 800, top: 25, leg: 50, leg_inset: 50 }
+    aperture_mm: { shape: "under", width: 1000, height: 725, bottom: 0, across_width: 600 }
     drawing: drawings/I01-a.svg

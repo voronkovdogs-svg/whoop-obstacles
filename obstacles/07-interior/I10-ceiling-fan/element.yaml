@@ -4,27 +4,32 @@ id: I10
 name_ru: "Потолочный вентилятор"
 name_en: "Ceiling fan"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: dynamic         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: dynamic       # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
+description: >-
+  Потолочный вентилятор: штанга 200 мм, корпус мотора Ø200×150 мм, пять лопастей длиной 520
+  мм — диаметр вращения 1320 мм. Лопасти на высоте около 2250 мм при потолке 2500 мм.
+real_analog: "потолочный вентилятор 52″"
+mount: hanging         # floor | stand | hanging | wall | free
+material: "металл, дерево"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "корпус белый #FAFAFA, лопасти светлое дерево #D7CCC8"
+difficulty: 5          # 1–5
 motion:               # только для dynamic
-  type: ""            # rotation | swing | linear | open-close
-  axis: ""            # x | y | z
-  period_s:           # период движения, с
-  amplitude: ""       # угол (°) или ход (мм)
-notes: ""
+  type: "rotation"    # rotation | swing | linear | open-close
+  axis: "y"           # ось вращения/движения: x | y | z
+  period_s: 0.4       # период полного цикла, с
+  amplitude: "360°, ~150 об/мин" # угол (°) или ход (мм)
+  downdraft: "столб нисходящего потока Ø1500 мм до пола"
+notes: >-
+  Опасная зона: удар лопастью и сильный нисходящий поток, который «роняет» вуп. В симуляторе
+  — вращающаяся геометрия + зона турбулентности под вентилятором.
 
 variants:
   - id: I10-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 52″"
+    dimensions_mm: { width: 1320, height: 350, depth: 1320, ceiling: 2500, downrod: 200, blades: 5, blade: 520 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I10-a.svg

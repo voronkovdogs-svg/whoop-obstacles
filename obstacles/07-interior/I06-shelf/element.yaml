@@ -4,22 +4,26 @@ id: I06
 name_ru: "Стеллаж"
 name_en: "Shelf"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Открытый стеллаж без задней стенки 800×1800×300 мм: боковины и полки 20 мм, пять ячеек
+  высотой 336 мм в свету и шириной 760 мм. Через любую ячейку можно пролететь насквозь.
+real_analog: "стеллаж-перегородка (как в IKEA-стиле)"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ЛДСП"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "светлая берёза #D7CCC8"
+difficulty: 3          # 1–5
+notes: >-
+  Пять ячеек = пять «ворот» на разной высоте. Ячейки нумеруются снизу вверх 1–5. В реальной
+  квартире часть ячеек занята книгами — в симуляторе можно случайно закрывать.
 
 variants:
   - id: I06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 5 ячеек"
+    dimensions_mm: { width: 800, height: 1800, depth: 300, board: 20, cells: 5 }
+    aperture_mm: { shape: "5×rect", width: 760, height: 336, bottoms: "20, 376, 732, 1088, 1444", length: 300 }
     drawing: drawings/I06-a.svg

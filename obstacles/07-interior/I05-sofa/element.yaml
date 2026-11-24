@@ -4,22 +4,26 @@ id: I05
 name_ru: "Диван"
 name_en: "Sofa"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Трёхместный диван 2000×900 мм: сиденье на высоте 450 мм, подлокотники 200 мм шириной и 650
+  мм высотой, спинка до 850 мм глубиной 200 мм. Ножки 100 мм.
+real_analog: "обычный диван"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ткань, поролон, деревянный каркас"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "серо-голубая ткань #78909C"
+difficulty: 1          # 1–5
+notes: >-
+  Крупный мягкий объект: облёт или перелёт. Мягкая обивка — безопасная зона для неудачной
+  посадки.
 
 variants:
   - id: I05-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 2000"
+    dimensions_mm: { width: 2000, height: 850, depth: 900, seat_height: 450, arm: 200, arm_height: 650, back: 200, legs: 100 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I05-a.svg

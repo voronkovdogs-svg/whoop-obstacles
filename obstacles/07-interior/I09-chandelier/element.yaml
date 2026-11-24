@@ -4,22 +4,26 @@ id: I09
 name_ru: "Люстра / подвесная лампа"
 name_en: "Chandelier"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Люстра на штанге 400 мм от потолка (2500 мм): центральный корпус Ø150 и пять рожков
+  радиусом 300 мм с плафонами Ø120×150 мм. Нижняя точка — около 1900 мм.
+real_analog: "люстра с плафонами"
+mount: hanging         # floor | stand | hanging | wall | free
+material: "металл, стекло"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "латунь #C9A227, плафоны белые #FAFAFA"
+difficulty: 2          # 1–5
+notes: >-
+  Хрупкое и опасное препятствие под потолком: облёт снизу или сбоку. Светит — на камере вупа
+  даёт засветку.
 
 variants:
   - id: I09-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 5 рожков"
+    dimensions_mm: { width: 720, height: 550, depth: 720, ceiling: 2500, stem: 400, arms: 5, arm_radius: 300, shade: 120 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I09-a.svg

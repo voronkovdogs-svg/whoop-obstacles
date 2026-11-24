@@ -4,27 +4,32 @@ id: I08
 name_ru: "Крупная мебель"
 name_en: "Tall furniture"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Высокий сплошной предмет мебели у стены — препятствие для облёта и ориентир. Шкаф:
+  1200×600×2100 мм, двухстворчатый. Холодильник: 600×650×1850 мм.
+real_analog: "шкаф-купе / холодильник"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ЛДСП / металл"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "по вариантам"
+difficulty: 1          # 1–5
+notes: >-
+  Глухие крупные объемы, закрывающие обзор. Ставятся по краям трассы.
 
 variants:
   - id: I08-a
     label: "шкаф"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    color: "дерево #8D6E63"
+    dimensions_mm: { width: 1200, height: 2100, depth: 600, doors: 2 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I08-a.svg
   - id: I08-b
     label: "холодильник"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    color: "белый #FAFAFA"
+    dimensions_mm: { width: 600, height: 1850, depth: 650 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/I08-b.svg

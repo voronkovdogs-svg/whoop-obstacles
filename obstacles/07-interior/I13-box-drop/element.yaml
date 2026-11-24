@@ -4,22 +4,26 @@ id: I13
 name_ru: "Ящик для нырка (box drop)"
 name_en: "Box drop"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Картонный куб 600×600×600 мм без верхних клапанов. В передней стенке вырезано круглое окно
+  Ø300 мм с центром на высоте 300 мм.
+real_analog: "большая коробка с вырезом"
+mount: floor           # floor | stand | hanging | wall | free
+material: "гофрокартон"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "крафт #C49A6C, кант окна белый #FFFFFF"
+difficulty: 5          # 1–5
+notes: >-
+  Нырок в коробку сверху и выход через боковое окно — или наоборот: влёт в окно и
+  вертикальный выход вверх. Внутри тесно (580 мм) и темно.
 
 variants:
   - id: I13-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 600"
+    dimensions_mm: { width: 600, height: 600, depth: 600, wall: 10 }
+    aperture_mm: { shape: "top+side", top: "580×580", side_diameter: 300, side_center_y: 300 }
     drawing: drawings/I13-a.svg

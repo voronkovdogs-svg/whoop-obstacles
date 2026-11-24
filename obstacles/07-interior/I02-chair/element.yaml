@@ -4,22 +4,27 @@ id: I02
 name_ru: "Стул"
 name_en: "Chair"
 category: interior
-scope: indoor            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: indoor           # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Стул: сиденье 450×450×20 мм на высоте 450 мм (верх), спинка до 900 мм, четыре
+  металлические ножки 30×30 мм по углам сиденья без перемычек. Пролёт — между ножками под
+  сиденьем.
+real_analog: "стул со спинкой"
+mount: floor           # floor | stand | hanging | wall | free
+material: "металлические ножки, деревянное сиденье"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "ножки чёрные #212121, сиденье и спинка — бук #D7A86E"
+difficulty: 4          # 1–5
+notes: >-
+  Проём 390×430 мм — почти как маленькие ворота, но жёсткие ножки не прощают касаний.
+  Несколько стульев в ряд дают «тоннель» под сиденьями.
 
 variants:
   - id: I02-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 450, height: 900, depth: 450, seat: 450, seat_height: 450, leg: 30 }
+    aperture_mm: { shape: "rect", width: 390, height: 430, bottom: 0 }
     drawing: drawings/I02-a.svg
