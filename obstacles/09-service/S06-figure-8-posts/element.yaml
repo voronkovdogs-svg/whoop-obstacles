@@ -4,22 +4,27 @@ id: S06
 name_ru: "Восьмёрка вокруг двух столбов"
 name_en: "Figure-8 posts"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Два мягких шеста (как M05) высотой 1600 мм на расстоянии 1500 мм между осями. Траектория —
+  восьмёрка: облёт первого шеста по часовой, второго — против, перекрестье посередине.
+real_analog: "разметка восьмёрки из двух шестов"
+components: "2 × M05"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "см. M05"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "шест 1 розовый #EC407A, шест 2 голубой #29B6F6"
+difficulty: 2          # 1–5
+notes: >-
+  Базовое упражнение на координацию крена и рыскания. Можно задавать высоту полёта — 500,
+  1000 мм.
 
 variants:
   - id: S06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (1500 между шестами)"
+    dimensions_mm: { width: 500, height: 1620, depth: 2700, spacing: 1500, loop_radius: 500 }
+    aperture_mm: { shape: "none", path: "восьмёрка, R≈500 вокруг каждого шеста" }
     drawing: drawings/S06-a.svg

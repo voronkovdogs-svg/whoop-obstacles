@@ -4,27 +4,33 @@ id: S02
 name_ru: "Посадка"
 name_en: "Landing"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Плоские элементы на полу для приземления в конце упражнения или трассы.
+real_analog: "складная посадочная площадка / мишень"
+mount: floor           # floor | stand | hanging | wall | free
+material: "нейлон на пружинном ободе / ПВХ-баннер"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "по вариантам"
+difficulty: 2          # 1–5
+notes: >-
+  Площадка — просто зона посадки. Мишень даёт очки за точность (центр — 4, внешнее кольцо —
+  1).
 
 variants:
   - id: S02-a
-    label: "площадка"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "площадка Ø400"
+    color: "оранжевая #FF6D00, буква H белая #FFFFFF"
+    dimensions_mm: { width: 400, height: 3, depth: 400, diameter: 400 }
+    aperture_mm: { shape: "none", landing_zone: "круг Ø400" }
     drawing: drawings/S02-a.svg
   - id: S02-b
-    label: "мишень точной посадки"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "мишень точной посадки Ø600"
+    difficulty: 3
+    color: "кольца: белое #FFFFFF / синее #1E88E5 / красное #E53935 / жёлтое яблочко #FDD835"
+    dimensions_mm: { width: 600, height: 2, depth: 600, rings: "600, 400, 200, 80" }
+    aperture_mm: { shape: "none", scoring: "Ø80 — 4, Ø200 — 3, Ø400 — 2, Ø600 — 1" }
     drawing: drawings/S02-b.svg

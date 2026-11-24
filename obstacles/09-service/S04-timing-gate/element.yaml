@@ -4,22 +4,27 @@ id: S04
 name_ru: "Ворота с хронометражем"
 name_en: "Timing gate"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратные ворота 500×500 (как G03-c) с блоком хронометража 120×60×40 мм на верхней
+  кромке. По периметру проёма — светодиодная лента, которая вспыхивает при пролёте.
+real_analog: "ворота с лап-таймером (по видеосигналу дрона)"
+components: "G03-c + таймер"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь, электроника"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ворота белые #FAFAFA, LED-лента циан #00E5FF, блок таймера чёрный #212121"
+difficulty: 1          # 1–5
+notes: >-
+  Плоскость проёма — триггер круга: пересечение = отметка времени. Обычно это старт/финиш
+  круга. В симуляторе вспышка ленты — визуальный отклик на засчитанный круг.
 
 variants:
   - id: S04-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 500"
+    dimensions_mm: { width: 500, height: 540, depth: 200, gate: 500, band: 50, timer: "120×60×40" }
+    aperture_mm: { shape: "rect", width: 400, height: 400, bottom: 50, trigger: "круг" }
     drawing: drawings/S04-a.svg

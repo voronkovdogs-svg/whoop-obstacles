@@ -4,22 +4,27 @@ id: S05
 name_ru: "Куб висения"
 name_en: "Hover cube"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Каркасный куб 600×600×600 мм из стеклопластиковых прутков Ø8 мм, поднятый на четырёх
+  ножках: нижняя грань на высоте 300 мм. Грани открыты, рёбра светятся флуоресцентной
+  краской.
+real_analog: "тренировочный куб для висения"
+mount: floor           # floor | stand | hanging | wall | free
+material: "стеклопластик"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "салатовый флуоресцентный #76FF03"
+difficulty: 2          # 1–5
+notes: >-
+  Упражнение: влететь в куб через любую грань и удерживать висение внутри 5–10 с, не касаясь
+  рёбер. В симуляторе — зона-таймер внутри куба.
 
 variants:
   - id: S05-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 600"
+    dimensions_mm: { width: 600, height: 900, depth: 600, cube: 600, rod: 8, lift: 300 }
+    aperture_mm: { shape: "cube", inner: 584, bottom: 308, hold_s: "5–10" }
     drawing: drawings/S05-a.svg

@@ -4,22 +4,28 @@ id: S03
 name_ru: "Финишные ворота"
 name_en: "Finish gate"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Рамка с тканевым баннером, как G16, но шире: 900×700 мм снаружи, боковые полосы 50 мм,
+  верхняя полоса 120 мм в чёрно-белую шахматку, внизу планка 30 мм. Стоит на Т-ножках
+  глубиной 300 мм.
+real_analog: "финишная арка в миниатюре"
+components: "вариант G16"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "стеклопластик, полиэстер"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "баннер белый #FFFFFF, шахматка чёрная #212121"
+difficulty: 1          # 1–5
+notes: >-
+  Плоскость проёма — финишная линия. Шахматка однозначно отличает финиш от остальных ворот
+  на камере.
 
 variants:
   - id: S03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 900×700"
+    dimensions_mm: { width: 900, height: 700, depth: 300, top_band: 120, side_band: 50, bottom_bar: 30 }
+    aperture_mm: { shape: "rect", width: 800, height: 550, bottom: 30, trigger: "финиш" }
     drawing: drawings/S03-a.svg

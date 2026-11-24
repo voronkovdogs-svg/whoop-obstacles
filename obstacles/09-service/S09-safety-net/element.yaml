@@ -4,22 +4,26 @@ id: S09
 name_ru: "Ограждение / защитная сетка"
 name_en: "Safety net"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Секция ограждения 2000×2000 мм: спортивная сетка с ячейкой 20 мм, натянутая между двумя
+  стойками Ø40 мм на Т-ножках глубиной 600 мм. Секции ставятся встык.
+real_analog: "спортивная защитная сетка"
+mount: floor           # floor | stand | hanging | wall | free
+material: "полиэтиленовая сетка, алюминиевые стойки"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "сетка чёрная #212121, стойки серые #9E9E9E"
+difficulty: 1          # 1–5
+notes: >-
+  Отделяет трассу от зоны пилотов и зрителей. В симуляторе — граница трассы: касание = вылет
+  за трассу.
 
 variants:
   - id: S09-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "секция 2000×2000"
+    dimensions_mm: { width: 2040, height: 2000, depth: 600, mesh: 20, post: 40 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/S09-a.svg

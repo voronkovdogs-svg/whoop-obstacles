@@ -4,22 +4,26 @@ id: S08
 name_ru: "Номерная табличка"
 name_en: "Number plate"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратная табличка 200×200×3 мм с крупным номером (высота цифр 140 мм) и клипсой для
+  крепления на кромку ворот или на собственную ножку высотой 150 мм.
+real_analog: "номер ворот на трассе"
+mount: free            # floor | stand | hanging | wall | free
+material: "ПВХ"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "белая #FFFFFF, номер чёрный #212121"
+difficulty: 1          # 1–5
+notes: >-
+  Порядок прохождения ворот. В симуляторе номер — текстура, генерируемая из порядкового
+  номера элемента.
 
 variants:
   - id: S08-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 200"
+    dimensions_mm: { width: 200, height: 350, depth: 120, plate: 200, digit: 140, stand: 150 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/S08-a.svg

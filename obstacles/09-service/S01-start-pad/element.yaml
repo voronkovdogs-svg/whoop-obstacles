@@ -4,22 +4,26 @@ id: S01
 name_ru: "Стартовая площадка"
 name_en: "Start pad"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Плоский резиновый коврик 300×300×5 мм с разметкой: крест по центру, стрелка направления
+  старта и номер стартовой позиции в углу. Вуп ставится в центр креста носом по стрелке.
+real_analog: "стартовый коврик для микро-гонок"
+mount: floor           # floor | stand | hanging | wall | free
+material: "резина/EVA"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "чёрный #212121, разметка белая #FFFFFF и оранжевая #FF6D00"
+difficulty: 1          # 1–5
+notes: >-
+  Задаёт точку и направление старта. В симуляторе — точка спавна дрона: центр креста, курс
+  по стрелке.
 
 variants:
   - id: S01-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 300"
+    dimensions_mm: { width: 300, height: 5, depth: 300 }
+    aperture_mm: { shape: "none", spawn: "центр, курс по стрелке" }
     drawing: drawings/S01-a.svg

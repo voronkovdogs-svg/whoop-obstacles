@@ -4,22 +4,26 @@ id: S07
 name_ru: "Стрелка-указатель"
 name_en: "Direction arrow"
 category: service
-scope: service            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+scope: service          # track | indoor | outdoor | service
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Двусторонняя табличка 400×250 мм из ПВХ 3 мм с крупной стрелкой-шевроном, на двух ножках,
+  нижний край таблички на высоте 300 мм. Ставится у поворотов трассы.
+real_analog: "указатель направления на трассе"
+mount: floor           # floor | stand | hanging | wall | free
+material: "ПВХ, металлические ножки"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "фон жёлтый #FDD835, стрелка чёрная #212121"
+difficulty: 1          # 1–5
+notes: >-
+  Подсказывает направление для новичков и в незнакомой трассе. Направление стрелки задаётся
+  при расстановке (влево/вправо/вверх).
 
 variants:
   - id: S07-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std 400×250"
+    dimensions_mm: { width: 400, height: 550, depth: 200, plate: "400×250", plate_bottom: 300 }
+    aperture_mm: { shape: "none" }
     drawing: drawings/S07-a.svg

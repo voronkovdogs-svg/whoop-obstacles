@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 9, filled: 76
+Элементов: **85**, вариантов: **112**. filled: 85
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -82,12 +82,12 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [O05](obstacles/08-outdoor/O05-garden-arch/element.yaml) | Садовая арка | outdoor | outdoor | static | 1 | 1/1 | filled |
 | [O06](obstacles/08-outdoor/O06-playground/element.yaml) | Детская площадка | outdoor | outdoor | static | 2 | 2/2 | filled |
 | [O07](obstacles/08-outdoor/O07-bike-rack/element.yaml) | Велопарковка | outdoor | outdoor | static | 1 | 1/1 | filled |
-| [S01](obstacles/09-service/S01-start-pad/element.yaml) | Стартовая площадка | service | service | static | 1 | 0/1 | draft |
-| [S02](obstacles/09-service/S02-landing/element.yaml) | Посадка | service | service | static | 2 | 0/2 | draft |
-| [S03](obstacles/09-service/S03-finish-gate/element.yaml) | Финишные ворота | service | service | static | 1 | 0/1 | draft |
-| [S04](obstacles/09-service/S04-timing-gate/element.yaml) | Ворота с хронометражем | service | service | static | 1 | 0/1 | draft |
-| [S05](obstacles/09-service/S05-hover-cube/element.yaml) | Куб висения | service | service | static | 1 | 0/1 | draft |
-| [S06](obstacles/09-service/S06-figure-8-posts/element.yaml) | Восьмёрка вокруг двух столбов | service | service | static | 1 | 0/1 | draft |
-| [S07](obstacles/09-service/S07-arrow/element.yaml) | Стрелка-указатель | service | service | static | 1 | 0/1 | draft |
-| [S08](obstacles/09-service/S08-number-plate/element.yaml) | Номерная табличка | service | service | static | 1 | 0/1 | draft |
-| [S09](obstacles/09-service/S09-safety-net/element.yaml) | Ограждение / защитная сетка | service | service | static | 1 | 0/1 | draft |
+| [S01](obstacles/09-service/S01-start-pad/element.yaml) | Стартовая площадка | service | service | static | 1 | 1/1 | filled |
+| [S02](obstacles/09-service/S02-landing/element.yaml) | Посадка | service | service | static | 2 | 2/2 | filled |
+| [S03](obstacles/09-service/S03-finish-gate/element.yaml) | Финишные ворота | service | service | static | 1 | 1/1 | filled |
+| [S04](obstacles/09-service/S04-timing-gate/element.yaml) | Ворота с хронометражем | service | service | static | 1 | 1/1 | filled |
+| [S05](obstacles/09-service/S05-hover-cube/element.yaml) | Куб висения | service | service | static | 1 | 1/1 | filled |
+| [S06](obstacles/09-service/S06-figure-8-posts/element.yaml) | Восьмёрка вокруг двух столбов | service | service | static | 1 | 1/1 | filled |
+| [S07](obstacles/09-service/S07-arrow/element.yaml) | Стрелка-указатель | service | service | static | 1 | 1/1 | filled |
+| [S08](obstacles/09-service/S08-number-plate/element.yaml) | Номерная табличка | service | service | static | 1 | 1/1 | filled |
+| [S09](obstacles/09-service/S09-safety-net/element.yaml) | Ограждение / защитная сетка | service | service | static | 1 | 1/1 | filled |
