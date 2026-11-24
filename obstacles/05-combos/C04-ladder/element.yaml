@@ -5,26 +5,33 @@ name_ru: "Лестница из ворот"
 name_en: "Ladder"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Квадратные тканевые ворота 400×400 (лента 50 мм) одни над другими с шагом 650 мм, на двух
+  стойках Ø25 мм с Т-ножками глубиной 300 мм. Нижний край нижних ворот на высоте 100 мм.
+real_analog: "гоночная «лестница» (ladder)"
+components: "2–3 × G03-b (400×400) на общей раме"   # из каких элементов каталога собран
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; стойки — алюминий"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ворота снизу вверх: зелёные #43A047 / жёлтые #FDD835 / красные #E53935; стойки чёрные #212121"
+difficulty: 3          # 1–5
+notes: >-
+  Подъём зигзагом: через нижние ворота вперёд, разворот с набором высоты, через следующие —
+  назад, и так далее. Обратное направление (сверху вниз) — серия split-S, сложнее.
 
 variants:
   - id: C04-a
     label: "2 уровня"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 3
+    dimensions_mm: { width: 460, height: 1200, depth: 300, gate: 400, band: 50, levels: 2, pitch: 650, lower_edges: "100, 750" }
+    aperture_mm: { shape: "2×rect", width: 300, height: 300, bottoms: "150, 800", maneuver: "зигзаг вверх" }
     drawing: drawings/C04-a.svg
   - id: C04-b
     label: "3 уровня"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    difficulty: 4
+    dimensions_mm: { width: 460, height: 1850, depth: 300, gate: 400, band: 50, levels: 3, pitch: 650, lower_edges: "100, 750, 1400" }
+    aperture_mm: { shape: "3×rect", width: 300, height: 300, bottoms: "150, 800, 1450", maneuver: "зигзаг вверх" }
     drawing: drawings/C04-b.svg

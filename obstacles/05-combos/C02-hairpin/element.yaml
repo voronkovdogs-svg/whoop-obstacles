@@ -5,21 +5,27 @@ name_ru: "Шпилька (разворот 180°)"
 name_en: "Hairpin"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Двое квадратных ворот 500×500 стоят рядом в одной линии, лицом в одну сторону, между
+  центрами 1000 мм. За ними по оси на расстоянии 900 мм — поворотный мягкий шест (M05).
+  Пролёт в левые ворота, разворот вокруг шеста и возврат через правые.
+real_analog: "гоночная «шпилька»"
+components: "2 × G03-c + M05"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "см. G03 и M05"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "левые ворота оранжевые #FF6A00, правые синие #1E88E5, шест розовый #EC407A"
+difficulty: 3          # 1–5
+notes: >-
+  Разворот на 180° на малом радиусе (~500 мм). Можно убрать шест — тогда разворот свободный,
+  сложнее попасть во вторые ворота. Зеркальный вариант — вход справа.
 
 variants:
   - id: C02-a
     label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    dimensions_mm: { width: 1500, height: 1620, depth: 1100, gate_spacing: 1000, pylon_distance: 900 }
+    aperture_mm: { shape: "2×rect", width: 400, height: 400, bottom: 50, turn: "180°, R≈500" }
     drawing: drawings/C02-a.svg

@@ -5,21 +5,26 @@ name_ru: "Ворота с переменной шириной"
 name_en: "Adjustable gate"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Две вертикальные стойки 30×30 мм высотой 650 мм симметрично скользят по базовому рельсу
+  длиной 1200 мм. Нижняя и верхняя телескопические планки 30 мм задают проём высотой 500 мм
+  (нижний край на 100 мм). Ширина проёма регулируется от 200 до 800 мм, по умолчанию 400.
+real_analog: "регулируемые тренировочные ворота"
+mount: floor           # floor | stand | hanging | wall | free
+material: "алюминиевый профиль, пластик"
+rigidity: hard         # soft | semi | hard — поведение при ударе вупа
+color: "стойки и планки красные #E53935, рельс чёрный #212121"
+difficulty: 2          # 1–5
+notes: >-
+  Сложность зависит от ширины: 800 — 1, 400 — 2, 250 — 4, 200 — 5. В симуляторе ширина —
+  параметр, можно сужать по мере прогресса ученика.
 
 variants:
   - id: C09-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (ширина 400, диапазон 200–800)"
+    dimensions_mm: { width: 1200, height: 650, depth: 300, post: 30, rail: 1200 }
+    aperture_mm: { shape: "rect", width: 400, width_min: 200, width_max: 800, height: 500, bottom: 100 }
     drawing: drawings/C09-a.svg

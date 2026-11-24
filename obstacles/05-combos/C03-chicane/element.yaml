@@ -5,21 +5,26 @@ name_ru: "Шикана"
 name_en: "Chicane"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Трое квадратных ворот 500×500 друг за другом с шагом 1200 мм по направлению полёта и со
+  смещением центров на ±400 мм поочерёдно влево и вправо. Все ворота стоят на полу.
+real_analog: "гоночная шикана"
+components: "3 × G03-c"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "см. G03"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ворота: синие #1E63D6 / жёлтые #FFC400 / синие #1E63D6"
+difficulty: 3          # 1–5
+notes: >-
+  S-образная траектория без остановок: тренирует плавные перекладки по крену. Смещение и шаг
+  можно менять: меньше шаг — резче перекладки.
 
 variants:
   - id: C03-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (шаг 1200, смещение 800)"
+    dimensions_mm: { width: 1300, height: 500, depth: 2600, step: 1200, offset: 800 }
+    aperture_mm: { shape: "3×rect", width: 400, height: 400, bottom: 50 }
     drawing: drawings/C03-a.svg

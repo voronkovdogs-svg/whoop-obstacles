@@ -1,25 +1,31 @@
-# C06 — Power loop
+# C06 — Power loop (петля вокруг перекладины)
 # Общие поля элемента. Вариант может переопределить любое из них.
 id: C06
-name_ru: "Power loop"
+name_ru: "Power loop (петля вокруг перекладины)"
 name_en: "Power loop"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Горизонтальная планка из pool noodle Ø65 мм длиной 1000 мм на высоте 1200 мм (по оси) на
+  двух высоких стойках Ø25 мм с Т-ножками. Под планкой свободный проём на всю ширину.
+real_analog: "высокая планка для петли"
+components: "высокая версия B01"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "вспененный полиэтилен; стойки — стеклопластик"
+rigidity: soft         # soft | semi | hard — поведение при ударе вупа
+color: "планка красная #E53935, стойки белые #FAFAFA"
+difficulty: 4          # 1–5
+notes: >-
+  Манёвр: пролёт под планкой, сразу полная петля назад-вверх через верх планки и снова
+  пролёт под ней. Нужна высота потолка от 2 м: петля радиусом ~500 мм поднимается до ~1700
+  мм.
 
 variants:
   - id: C06-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (ось планки 1200)"
+    dimensions_mm: { width: 1065, height: 1250, depth: 300, bar: 65, bar_axis: 1200 }
+    aperture_mm: { shape: "under", width: 1000, height: 1167, bottom: 0, maneuver: "петля вокруг планки, R≈500" }
     drawing: drawings/C06-a.svg

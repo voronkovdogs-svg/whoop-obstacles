@@ -5,21 +5,27 @@ name_ru: "Воронка (уменьшающиеся ворота)"
 name_en: "Funnel"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Трое квадратных ворот по одной оси с шагом 800 мм, каждые следующие меньше: 500×500,
+  400×400, 300×300 (проёмы 400, 300, 220 мм). Все стоят на полу, поэтому центр проёма с
+  каждыми воротами чуть ниже.
+real_analog: "последовательность ворот уменьшающегося размера"
+components: "G03-c → G03-b → G03-a"   # из каких элементов каталога собран
+mount: floor           # floor | stand | hanging | wall | free
+material: "см. G03"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "ворота по порядку: зелёные #43A047 / жёлтые #FDD835 / красные #E53935"
+difficulty: 3          # 1–5
+notes: >-
+  Точность растёт по ходу пролёта: первые ворота прощают ошибку, последние (220 мм) — почти
+  нет. Хорошее упражнение на стабилизацию линии перед узким проёмом.
 
 variants:
   - id: C08-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (500 → 400 → 300)"
+    dimensions_mm: { width: 500, height: 500, depth: 1800, step: 800, gates: "500, 400, 300" }
+    aperture_mm: { shape: "3×rect", widths: "400, 300, 220", centers_y: "250, 200, 150", bottom: 40 }
     drawing: drawings/C08-a.svg

@@ -2,7 +2,7 @@
 
 _Генерируется `python tools/index.py`, руками не править._
 
-Элементов: **85**, вариантов: **112**. draft: 42, filled: 43
+Элементов: **85**, вариантов: **112**. draft: 33, filled: 52
 
 | ID | Название | Категория | Scope | Тип | Вариантов | Чертежи | Статус |
 |---|---|---|---|---|---|---|---|
@@ -49,15 +49,15 @@ _Генерируется `python tools/index.py`, руками не прави�
 | [B08](obstacles/04-barriers/B08-partition/element.yaml) | Ширма-перегородка | barriers | track | static | 1 | 1/1 | filled |
 | [B09](obstacles/04-barriers/B09-maze-segment/element.yaml) | Сегмент лабиринта | barriers | track | static | 1 | 1/1 | filled |
 | [B10](obstacles/04-barriers/B10-gap/element.yaml) | Узкая щель | barriers | track | static | 3 | 3/3 | filled |
-| [C01](obstacles/05-combos/C01-split-s/element.yaml) | Split-S | combos | track | static | 1 | 0/1 | draft |
-| [C02](obstacles/05-combos/C02-hairpin/element.yaml) | Шпилька (разворот 180°) | combos | track | static | 1 | 0/1 | draft |
-| [C03](obstacles/05-combos/C03-chicane/element.yaml) | Шикана | combos | track | static | 1 | 0/1 | draft |
-| [C04](obstacles/05-combos/C04-ladder/element.yaml) | Лестница из ворот | combos | track | static | 2 | 0/2 | draft |
-| [C05](obstacles/05-combos/C05-tower/element.yaml) | Башня | combos | track | static | 1 | 0/1 | draft |
-| [C06](obstacles/05-combos/C06-power-loop/element.yaml) | Power loop | combos | track | static | 1 | 0/1 | draft |
-| [C07](obstacles/05-combos/C07-spiral/element.yaml) | Спираль из колец | combos | track | static | 1 | 0/1 | draft |
-| [C08](obstacles/05-combos/C08-funnel/element.yaml) | Воронка (уменьшающиеся ворота) | combos | track | static | 1 | 0/1 | draft |
-| [C09](obstacles/05-combos/C09-adjustable-gate/element.yaml) | Ворота с переменной шириной | combos | track | static | 1 | 0/1 | draft |
+| [C01](obstacles/05-combos/C01-split-s/element.yaml) | Split-S | combos | track | static | 1 | 1/1 | filled |
+| [C02](obstacles/05-combos/C02-hairpin/element.yaml) | Шпилька (разворот 180°) | combos | track | static | 1 | 1/1 | filled |
+| [C03](obstacles/05-combos/C03-chicane/element.yaml) | Шикана | combos | track | static | 1 | 1/1 | filled |
+| [C04](obstacles/05-combos/C04-ladder/element.yaml) | Лестница из ворот | combos | track | static | 2 | 2/2 | filled |
+| [C05](obstacles/05-combos/C05-tower/element.yaml) | Башня | combos | track | static | 1 | 1/1 | filled |
+| [C06](obstacles/05-combos/C06-power-loop/element.yaml) | Power loop (петля вокруг перекладины) | combos | track | static | 1 | 1/1 | filled |
+| [C07](obstacles/05-combos/C07-spiral/element.yaml) | Спираль из колец | combos | track | static | 1 | 1/1 | filled |
+| [C08](obstacles/05-combos/C08-funnel/element.yaml) | Воронка (уменьшающиеся ворота) | combos | track | static | 1 | 1/1 | filled |
+| [C09](obstacles/05-combos/C09-adjustable-gate/element.yaml) | Ворота с переменной шириной | combos | track | static | 1 | 1/1 | filled |
 | [D01](obstacles/06-dynamic/D01-rotating-gate/element.yaml) | Вращающиеся ворота | dynamic | track | dynamic | 1 | 0/1 | draft |
 | [D02](obstacles/06-dynamic/D02-pendulum/element.yaml) | Маятник | dynamic | track | dynamic | 1 | 0/1 | draft |
 | [D03](obstacles/06-dynamic/D03-shutter/element.yaml) | Подвижная заслонка | dynamic | track | dynamic | 1 | 0/1 | draft |

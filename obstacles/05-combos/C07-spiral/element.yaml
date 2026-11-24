@@ -5,21 +5,28 @@ name_ru: "Спираль из колец"
 name_en: "Ring spiral"
 category: combos
 scope: track            # track | indoor | outdoor | service
-behavior: static         # static | dynamic
-status: draft           # draft | filled | reviewed
+behavior: static        # static | dynamic
+status: filled          # draft | filled | reviewed
 
-description: ""         # как выглядит, из чего состоит
-real_analog: ""         # реальный предмет/аналог (без брендов)
-mount: ""               # floor | stand | hanging | wall | free
-material: ""
-rigidity: ""            # soft | semi | hard — поведение при ударе вупа
-color: ""
-difficulty:             # 1–5
-notes: ""
+description: >-
+  Пять тканевых колец Ø400 (лента 50 мм) на телескопических стойках с основанием 200×200 мм,
+  расставлены по полуокружности радиусом 1000 мм через 45°. Каждое следующее кольцо выше
+  предыдущего на 250 мм: нижние края 100 / 350 / 600 / 850 / 1100 мм. Плоскость кольца
+  проходит через центр дуги.
+real_analog: "набор колец на стойках, выставленных спиралью"
+components: "5 × G01-b (Ø400) на телескопических стойках"   # из каких элементов каталога собран
+mount: stand           # floor | stand | hanging | wall | free
+material: "полиэстер, пружинная сталь; стойки — алюминий"
+rigidity: semi         # soft | semi | hard — поведение при ударе вупа
+color: "кольца по порядку: #43A047, #7CB342, #FDD835, #FB8C00, #E53935 (от зелёного к красному)"
+difficulty: 4          # 1–5
+notes: >-
+  Набор высоты в постоянном вираже: газ и крен нужно держать одновременно. Обратный проход —
+  спуск по спирали.
 
 variants:
   - id: C07-a
-    label: "std"
-    dimensions_mm: {}   # габариты: width/height/depth, diameter, length…
-    aperture_mm: {}   # проходной проём
+    label: "std (5 колец, R1000)"
+    dimensions_mm: { width: 2400, height: 1500, depth: 1300, rings: 5, radius: 1000, rise: 250, ring: 400, band: 50 }
+    aperture_mm: { shape: "5×circle", diameter: 300, bottoms: "150, 400, 650, 900, 1150", maneuver: "по дуге R1000 по часовой (вид сверху) с набором высоты" }
     drawing: drawings/C07-a.svg
